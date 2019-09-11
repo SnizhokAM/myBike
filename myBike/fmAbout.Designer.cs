@@ -1,4 +1,4 @@
-﻿namespace myPaint
+﻿namespace myBike
 {
     partial class fmAbout
     {
@@ -32,14 +32,16 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.pbAbout = new System.Windows.Forms.PictureBox();
             this.lbAbout = new System.Windows.Forms.Label();
+            this.llblGPL = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbAbout)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(286, 153);
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.Location = new System.Drawing.Point(261, 152);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(100, 24);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "&Ок";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -66,15 +68,29 @@
             this.lbAbout.Name = "lbAbout";
             this.lbAbout.Size = new System.Drawing.Size(167, 90);
             this.lbAbout.TabIndex = 2;
-            this.lbAbout.Text = "myBike (Bike Calculator)\r\nВелосипедний калькулятор\r\nVersion 1.0.0\r\n© Snowsoft, 20" +
-    "19\r\n\r\nThis program is free software\r\n";
+            this.lbAbout.Text = "myBike (Cycling calculator)\r\nВелосипедний калькулятор\r\nVersion 1.0.0\r\nCopyright ©" +
+    " 2019 Snowsoft \r\n\r\nThis program is free software\r\n";
+            // 
+            // llblGPL
+            // 
+            this.llblGPL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.llblGPL.LinkColor = System.Drawing.Color.White;
+            this.llblGPL.Location = new System.Drawing.Point(198, 118);
+            this.llblGPL.Name = "llblGPL";
+            this.llblGPL.Size = new System.Drawing.Size(167, 23);
+            this.llblGPL.TabIndex = 3;
+            this.llblGPL.TabStop = true;
+            this.llblGPL.Text = "GNU General Public License";
+            this.llblGPL.VisitedLinkColor = System.Drawing.Color.Silver;
+            this.llblGPL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblGPL_LinkClicked);
             // 
             // fmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(373, 188);
+            this.Controls.Add(this.llblGPL);
             this.Controls.Add(this.lbAbout);
             this.Controls.Add(this.pbAbout);
             this.Controls.Add(this.btnExit);
@@ -97,5 +113,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox pbAbout;
         private System.Windows.Forms.Label lbAbout;
+        private System.Windows.Forms.LinkLabel llblGPL;
     }
 }

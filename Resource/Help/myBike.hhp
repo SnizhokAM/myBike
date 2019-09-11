@@ -1,0 +1,26 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=myBike.chm
+Contents file=Table of Contents.hhc
+Default topic=about.htm
+Display compile progress=No
+Full text search stop list file=search.stp
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x422 Украинский (Украина)
+Title=myBike - допомога
+
+
+[FILES]
+about.htm
+calc_cadens.htm
+calc_cassette.htm
+calc_computer.htm
+calc_size.htm
+calc_speed.htm
+calc_trip.htm
+calcs.htm
+license.htm
+
+[INFOTYPES]
+

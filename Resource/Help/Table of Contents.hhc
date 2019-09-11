@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Iuml;&eth;&icirc; &iuml;&eth;&icirc;&atilde;&eth;&agrave;&igrave;&oacute;">
+		<param name="Local" value="about.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Ecirc;&agrave;&euml;&uuml;&ecirc;&oacute;&euml;&yuml;&ograve;&icirc;&eth;&egrave;">
+		<param name="Local" value="calcs.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Ecirc;&agrave;&euml;&uuml;&ecirc;&oacute;&euml;&yuml;&ograve;&icirc;&eth; &eth;&icirc;&ntilde;&ograve;&icirc;&acirc;&ecirc;&egrave;">
+			<param name="Local" value="calc_size.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Ecirc;&agrave;&euml;&uuml;&ecirc;&oacute;&euml;&yuml;&ograve;&icirc;&eth; &ecirc;&agrave;&auml;&aring;&iacute;&ntilde;&oacute;">
+			<param name="Local" value="calc_cadens.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Ecirc;&agrave;&euml;&uuml;&ecirc;&oacute;&euml;&yuml;&ograve;&icirc;&eth; &oslash;&acirc;&egrave;&auml;&ecirc;&icirc;&ntilde;&ograve;&sup3;">
+			<param name="Local" value="calc_speed.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Ecirc;&agrave;&euml;&uuml;&ecirc;&oacute;&euml;&yuml;&ograve;&icirc;&eth; &ecirc;&agrave;&ntilde;&aring;&ograve;&egrave;">
+			<param name="Local" value="calc_cassette.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Iacute;&agrave;&euml;&agrave;&oslash;&ograve;&oacute;&acirc;&agrave;&iacute;&iacute;&yuml; &acirc;&aring;&euml;&icirc;&ecirc;&icirc;&igrave;&iuml;'&thorn;&ograve;&aring;&eth;&agrave;">
+			<param name="Local" value="calc_computer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Ecirc;&agrave;&euml;&uuml;&ecirc;&oacute;&euml;&yuml;&ograve;&icirc;&eth; &iuml;&icirc;&auml;&icirc;&eth;&icirc;&aelig;&sup3;">
+			<param name="Local" value="calc_trip.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Euml;&sup3;&ouml;&aring;&iacute;&ccedil;&sup3;&eacute;&iacute;&agrave; &oacute;&atilde;&icirc;&auml;&agrave;">
+		<param name="Local" value="license.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

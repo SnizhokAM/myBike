@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&iuml;&eth;&icirc;&atilde;&eth;&agrave;&igrave;&agrave;">
+		<param name="Name" value="Про програму">
+		<param name="Local" value="about.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&eth;&icirc;&ntilde;&ograve;&icirc;&acirc;&ecirc;&agrave;">
+		<param name="Name" value="Ростовка">
+		<param name="Local" value="calc_size.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&ecirc;&agrave;&auml;&aring;&iacute;&ntilde;">
+		<param name="Name" value="Каденс">
+		<param name="Local" value="calc_cadens.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&oslash;&acirc;&egrave;&auml;&ecirc;&sup3;&ntilde;&ograve;&uuml;">
+		<param name="Name" value="Швидкість">
+		<param name="Local" value="calc_speed.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&ecirc;&agrave;&ntilde;&aring;&ograve;&agrave;">
+		<param name="Name" value="Касета">
+		<param name="Local" value="calc_cassette.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&ograve;&eth;&agrave;&iacute;&ntilde;&igrave;&sup3;&ntilde;&sup3;&yuml;">
+		<param name="Name" value="Касета">
+		<param name="Local" value="calc_cassette.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&acirc;&aring;&euml;&icirc;&ecirc;&icirc;&igrave;&iuml;'&thorn;&ograve;&aring;&eth;">
+		<param name="Name" value="Велокомп'ютер">
+		<param name="Local" value="calc_computer.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&iuml;&icirc;&ograve;&oacute;&aelig;&iacute;&sup3;&ntilde;&ograve;&uuml;">
+		<param name="Name" value="Подорож">
+		<param name="Local" value="calc_trip.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&iuml;&icirc;&auml;&icirc;&eth;&icirc;&aelig;">
+		<param name="Name" value="Подорож">
+		<param name="Local" value="calc_trip.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&euml;&sup3;&ouml;&aring;&iacute;&ccedil;&sup3;&yuml;">
+		<param name="Name" value="Ліцензійна угода">
+		<param name="Local" value="license.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

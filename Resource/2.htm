@@ -1,0 +1,580 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+	<title>Bike Calculator</title>
+	<meta name="description" content="Useful calculators for estimating your speed on a bicycle velocity from various parameters.">
+	<meta name="keywords" content="bicycle bicycling cycle speed velocity calculator prediction rolling resistance calories">
+	<meta name="author" content="Austin Image">
+	<meta name="generator" content="BBEdit 5.0">
+	
+
+	<link rel="StyleSheet" href="bpstyles.css">
+	
+	<!--copyright 2008 Curt Austin -->
+
+<script language="JavaScript">
+
+		tireValues = [0.005, 0.004, 0.012];
+		aeroValues = [0.388, 0.445, 0.420, 0.300, 0.233, 0.200];
+
+function makeDecimal2 (value) {
+	if (value != null && value != 0) {
+		var x = Math.round(parseFloat(value) * 100);
+		var d;
+		if (x < 100) d=0;
+		else d = parseInt(x / 100);
+		var c = x % 100;
+		var g = (c >= 10)?"":"0";
+		value = "" + d + "." + g + c;
+	}
+	return value
+}
+
+function makeDecimal0 (value) {
+	if (value != null && value != 0) {
+		value = "" + Math.round(parseFloat(value));
+	}
+	return value
+}
+
+function valDecNumber(str) {  /* returns true if a valid number */
+	if(str.length == 0) return false;
+	var noNegSignYet = true;
+	var noPointYet = true;
+	for (i=0; i < str.length; i++) {
+		var chr = str.substring(i, i+1)
+		if (noPointYet && chr == ".") noPointYet = false;
+		else if (noNegSignYet && chr == "-") noNegSignYet = false;
+		else if (chr< "0" || chr > "9") {
+			alert ("I don't think you want to do that, Dave.");
+			return false
+		}
+	}
+	return true
+}
+
+function empty(inputStr) {
+	if (inputStr == "" || inputStr == null) return true;
+	return false
+}
+
+
+function update(form) {
+
+	with (document.f) {
+		
+		
+		/* USUnits = US.checked; */
+		USUnits = 0;
+		/* baseMetabolism = baseMet.checked; */
+		
+		/* Left panel */
+		vv = eval(velocity.value) / 3.6;  // converted to m/s;
+		rweightv = eval(rweight.value);
+		bweightv = eval(bweight.value);
+
+		
+		theTire = tire.selectedIndex;
+		rollingRes = tireValues[theTire];
+		theAero = aero.selectedIndex;
+		frontalArea = aeroValues[theAero];
+		gradev = eval(grade.value) * 0.01;
+		headwindv = eval(headwind.value) / 3.6;  // converted to m/s
+		distancev = eval(distance.value);
+		temperaturev = eval(temperature.value);
+		elevationv = eval(elevation.value);
+		transv = eval(trans.value) * 0.01;
+		
+		if(USUnits) {      // Convert to metric units
+			rweightv *= 0.4536;
+			bweightv *= 0.4536;
+			vv *= 1.6092;
+			headwindv *= 1.6092;
+			distancev *= 1.6092;
+			temperaturev = (temperaturev - 32) * 0.555;
+			elevationv *= 0.3048;
+		}
+		
+		/* Right panel */
+		vv2 = eval(velocity2.value) / 3.6;  // converted to m/s;
+		rweightv2 = eval(rweight2.value);
+		bweightv2 = eval(bweight2.value);
+
+		
+		theTire2 = tire2.selectedIndex;
+		rollingRes2 = tireValues[theTire2];
+		theAero2 = aero2.selectedIndex;
+		frontalArea2 = aeroValues[theAero2];
+		gradev2 = eval(grade2.value) * 0.01;
+		headwindv2 = eval(headwind2.value) / 3.6;  // converted to m/s
+		distancev2 = eval(distance2.value);
+		temperaturev2 = eval(temperature2.value);
+		elevationv2 = eval(elevation2.value);
+		transv2 = eval(trans2.value) * 0.01;
+		
+		if(USUnits) {      // Convert to metric units
+			rweightv2 *= 0.4536;
+			bweightv2 *= 0.4536;
+			vv2 *= 1.6092;
+			headwindv2 *= 1.6092;
+			distancev2 *= 1.6092;
+			temperaturev2 = (temperaturev2 - 32) * 0.555;
+			elevationv2 *= 0.3048;
+		}
+		
+		/* Left Calculation */
+		density = (1.293 - 0.00426 * temperaturev) * Math.exp(-elevationv / 7000.0);
+		twt = 9.8 * (rweightv + bweightv);  // total weight in newtons
+		A2 = 0.5 * frontalArea * density;  // full air resistance parameter
+		tres = twt * (gradev + rollingRes); // gravity and rolling resistance
+		
+		tv = vv + headwindv; 
+		pv = (vv * tres + vv * tv * tv * A2) / transv;
+		
+		if (vv > 0.0) t = 16.6667* distancev / vv;  // vv is m/s here
+			else t = 0.0;  // don't want any div by zero errors
+		c = t / 60.0 * (pv * 4.0) / 1.163;  
+			/* 1.163 is for converting watt-hours to kilocalories */
+			/* energy conversion eff = 0.25 */
+		wl = c / 7716;
+		
+		if(USUnits) {     // Convert to US units
+			wl *= 2.205;
+		}
+		/* Right Calculation */
+		density2 = (1.293 - 0.00426 * temperaturev2) * Math.exp(-elevationv2 / 7000.0);
+		twt2 = 9.8 * (rweightv2 + bweightv2);  // total weight in newtons
+		A22 = 0.5 * frontalArea2 * density2;  // full air resistance parameter
+		tres2 = twt2 * (gradev2 + rollingRes2); // gravity and rolling resistance
+
+		tv2 = vv2 + headwindv2; 
+		pv2 = vv2 * (tres2 + tv2 * tv2 * A22) / transv2;
+		
+		if (vv2 > 0.0) t2 = 16.6667 * distancev2 / vv2;
+			else t2 = 0.0;  // don't want any div by zero errors
+		c2 = t2 / 60.0 * (pv2 * 4.0) / 1.163;  
+			/* 1.163 is for converting watt-hours to kilocalories */
+			/* energy conversion eff = 0.25 */
+		wl2 = c2 / 7716;
+		
+		if(USUnits) {     // Convert to US units
+			wl2 *= 2.205;
+		}
+
+		/* Left results */
+		power.value = makeDecimal0(pv);
+		time.value = makeDecimal2(t);
+		calories.value = makeDecimal0(c);
+		weightloss.value = makeDecimal2(wl);
+		
+		/* Right results */
+		power2.value = makeDecimal0(pv2);
+		time2.value = makeDecimal2(t2);
+		calories2.value = makeDecimal0(c2);
+		weightloss2.value = makeDecimal2(wl2);
+		
+	}
+}
+</script>
+</head>
+
+<!-- =============================================================================== -->
+
+<body onload="update();">
+<form name="f"> 
+
+<center>
+
+<table width=900 cellpadding=3 cellspacing=1 border=0>
+
+	<tr><td colspan=3 valign="top">
+		<a href="index.html" title="Home"><img class="nomargins" src="g/head280.jpg" width="535" height="280" align="left" border="0"></a>
+		<script type="text/javascript"><!--
+google_ad_client = "pub-3264231561668182";
+/* 336x280, created 4/24/08 */
+google_ad_slot = "9110011639";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		</td>
+	</tr>	
+	
+	<tr>
+
+<!-- =============================================================================== -->
+	
+	<td valign="top">
+		<h2>Bike Calculator</h2>
+		<h3>Estimate your Power from Speed</h3>
+		<p>
+		<img src="g/stopSign.png" width="64" height="64" alt="stopSign" align="left"> <br> There is a new version of this calculator! On the <a href="index.html">home page</a>.<br><br clear="all">
+		
+		The calculators on this page calculate power from your speed and other parameters.  There are two independent calculators here so you can compare two sets of input parameters. <br><br>
+		A version for US units is <a href="wattsUS.html">here</a>. <br><br>
+		See the links at right for other calculators.<br><br>
+		
+		Grade is distance traveled divided by rise; enter a negative number for descents. You can enter a negative number for tailwinds. Calories and weight loss are based on the effort expended; basal metabolism is not included.
+		 
+		</p>
+	</td>
+	
+<!-- =============================================================================== -->
+	<td valign="top">
+	
+	<table class="calculator" width=400 border=0 cellspacing=3 cellpadding=1>
+	
+	<tr><td class="right" valign=top>
+			<h3>&nbsp;</h3>
+			</td>
+			<td valign=top>
+				<h3>&nbsp;  Set A</h3>
+			</td>
+			<td valign=top>
+				<h3>&nbsp;  Set B</h3
+			</td>
+		</tr>
+	
+		<!-- <tr><td class="right" valign=top> -->
+<!-- 			<h3>Units</h3> -->
+<!-- 			</td> -->
+<!-- 			<td valign=top colspan=2> -->
+<!-- 			<p> -->
+<!-- 			<INPUT TYPE="checkbox" NAME="US" onClick="update()"> US -->
+<!-- 			</p> -->
+<!-- 			</td> -->
+<!-- 		</tr> -->
+
+
+		<tr><td class="right" valign=top>
+			<h3>Speed</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="velocity" value="30" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '30'; this.focus(); this.select()} else update()" onblur="update();"> Kph
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="velocity2" value="30" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '30'; this.focus(); this.select()} else update()" onblur="update();"> Kph
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Rider weight</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="rweight" value="70" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '70'; this.focus(); this.select()} else update()" onblur="update();"> Kg
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="rweight2" value="70" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '70'; this.focus(); this.select()} else update()" onblur="update();"> Kg
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Bicycle weight</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="bweight" value="9" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '9'; this.focus(); this.select()} else update()" onblur="update();"> Kg
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="bweight2" value="9" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '9'; this.focus(); this.select()} else update()" onblur="update();"> Kg
+			</p>
+			</td>
+		</tr>
+	
+		<tr><td class="right" valign=top>
+			<h3>Tires</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<select name="tire" onChange="update()">
+				<option value=0 selected>Clinchers</option>
+				<option value=1>Tubulars</option>
+				<option value=2>MTB</option>
+			</select> 
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<select name="tire2" onChange="update()">
+				<option value=0 selected>Clinchers</option>
+				<option value=1>Tubulars</option>
+				<option value=2>MTB</option>
+			</select> 
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Position</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<select name="aero" onChange="update()">
+				<option value=0 selected>Hoods</option>
+				<option value=1>Bartops</option>
+				<option value=2>Bar ends</option>
+				<option value=2>Drops</option>
+				<option value=2>Aerobar</option>
+			</select> 
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<select name="aero2" onChange="update()">
+				<option value=0 selected>Hoods</option>
+				<option value=1>Bartops</option>
+				<option value=2>Bar ends</option>
+				<option value=2>Drops</option>
+				<option value=2>Aerobar</option>
+			</select> 
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Grade</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="grade" value="0" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '0'; this.focus(); this.select()} else update()" onblur="update();"> %
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="grade2" value="0" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '0'; this.focus(); this.select()} else update()" onblur="update();"> %
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Head wind</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="headwind" value="0" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '0'; this.focus(); this.select()} else update()" onblur="update(); f.distance.focus();"> Kph
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="headwind2" value="0" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '0'; this.focus(); this.select()} else update()" onblur="update();"> Kph
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Distance</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="distance" value="30" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '30'; this.focus(); this.select()} else update()" onblur="update();"> Km
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="distance2" value="30" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '30'; this.focus(); this.select()} else update()" onblur="update();"> Km
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Temperature</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="temperature" value="25" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '25'; this.focus(); this.select()} else update()" onblur="update();"> C
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="temperature2" value="25" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '25'; this.focus(); this.select()} else update()" onblur="update();"> C
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Elevation</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="elevation" value="100" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '100'; this.focus(); this.select()} else update()" onblur="update();"> m
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="elevation2" value="100" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '100'; this.focus(); this.select()} else update()" onblur="update();"> m
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Trans. Efficiency</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="trans" value="95" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '0'; this.focus(); this.select()} else update()" onblur="update();"> %
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="trans2" value="95" size="6" maxlength="7" onFocus="this.select()" onChange="if (valDecNumber(this.value) == false) {this.value = '0'; this.focus(); this.select()} else update()" onblur="update();"> %
+			</p>
+			</td>
+		</tr>
+		
+	
+		<tr>
+			<td colspan="3">
+				<hr>
+				<p class="center">
+				<input type="button" value=" Calculate " onClick="update()">
+				Predictions below:
+				</p>
+				<hr>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Power</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="power" size="6" maxlength="7"> watts
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="power2" size="6" maxlength="7"> watts
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign=top>
+			<h3>Time</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="time" size="6" maxlength="7"> minutes
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="time2" size="6" maxlength="7"> minutes
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right" valign="center">
+			<h3>Calories</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="calories" size="6" maxlength="7"> KCal
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="calories2" size="6" maxlength="7"> KCal
+			</p>
+			</td>
+		</tr>
+		
+		<tr><td class="right">
+			<h3>Weight loss</h3>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="weightloss" size="6" maxlength="7"> Kg
+			</p>
+			</td>
+			<td valign=top>
+			<p>
+			<input type="text" name="weightloss2" size="6" maxlength="7"> Kg
+			</p>
+			</td>
+		</tr>
+		
+	</table> <!-- End of calculating panel -->
+	</td>
+	
+<!-- =============================================================================== -->
+
+	
+	<td valign="top" rowspan="2">
+		
+		<p>
+		<b>Go to:</b><br><br>
+		<a href="index.html">Home</a><br><br>
+		<a href="veloMetric.html">SPEED from Power, Metric units</a><br>
+		<a href="veloUS.html">SPEED from Power, US units</a><br><br>
+		<a href="veloMetricNum.html">SPEED from Power, all numeric, </a><br><br>
+		<a href="wattsMetric.html">POWER from Speed, Metric units</a><br>
+		<a href="wattsUS.html">POWER from Speed, US units</a><br><br>
+		<a href="tripMetric.html">Six segments, Power-Metric</a><br>
+		<a href="tripUS.html">Six segments, Power-US</a><br><br>
+		<a href="about.html">About BikeCalculator.com</a><br>
+		</p>
+		<p>
+		<iframe src="http://rcm.amazon.com/e/cm?t=bikecalcu-20&o=1&p=8&l=as1&asins=0262731541&fc1=000000&IS2=1&lt1=_blank&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+		<br><br>
+		
+		<iframe src="http://rcm.amazon.com/e/cm?t=bikecalcu-20&o=1&p=8&l=as1&asins=086542912X&fc1=000000&IS2=1&lt1=_blank&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+		
+		</p>
+	</td>
+	
+	<tr>
+		<td valign="top" align="right" colspan="2">
+		<script type="text/javascript"><!--
+google_ad_client = "pub-3264231561668182";
+/* 728x90, created 4/24/08 */
+google_ad_slot = "1222529267";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		</td>
+	</tr>
+	
+<!-- =============================================================================== -->
+
+</table> <!-- End of main table -->
+
+<p class="footer">
+	<font color="#666666">
+
+Do not create enemies. Carry a good tube.<br>
+&copy; 2008 Curt Austin, all rights reserved.</font>
+</p>
+
+</center>
+</form>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+<script type='text/javascript' src='https://count.carrierzone.com/app/count_server/count.js'></script>
+<script type='text/javascript'><!--
+wm_custnum='c0b9223bf5c46959';
+wm_page_name='wattsMetric.html';
+wm_group_name='/services/webpages/b/i/bikecalculator.com/public';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// -->
+</script>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+</body>
+</html>
