@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-// This program is free software: you can redistribute it and/or modify
+﻿// This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
@@ -14,6 +10,10 @@ using System.Text;
 
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace myBike
 {
@@ -199,7 +199,7 @@ namespace myBike
             {
                 case 1:
                     {
-                        bikenote = "Примітка: для отримання розміру рами МТБ помножте висоту внутрішньої сторони ноги на коефіцієнт 0,226. Значення, яке ви отримаєте, покаже ростовку рами в дюймах. Щоб отримати розмір в санти- метрах, отримане значення потрібно помножити на 2,54.";
+                        bikenote = "Примітка: для отримання розміру рами МТБ помножте висоту внутрішньої сторони ноги на коефіцієнт 0,226. Значення, яке ви отримаєте, покаже ростовку рами в дюймах. Щоб отримати розмір в сантиметрах, отримане значення потрібно помножити на 2,54.";
                         break;
                     }
                 case 2:
@@ -209,12 +209,12 @@ namespace myBike
                     }
                 case 3:
                     {
-                        bikenote = "Примітка: для туристичних і трекінгових велосипедів помножте висоту внутрішньої сторони ноги на коефіцієнт 0,66. Значення, яке ви отримаєте, буде відповідати ростовці рами в сантиметрах. Якщо висоту внутрішньої сторони ноги помножити на 0,259, ви отримаєте розмір рами в дюймах.";
+                        bikenote = "Примітка: для туристичних і трекінгових велосипедів помножте висоту внутрішньої сторони ноги на коефіцієнт 0,66. Значення, яке ви отримаєте, буде відповідати ростовці рами в сантиметрах. Якщо висоту внутрішньої сто- рони ноги помножити на 0,259, ви отримаєте розмір рами в дюймах.";
                         break;
                     }
                 case 4:
                     {
-                        bikenote = "Примітка: ростовкою у BMX називається довжина верхньої труби рами (top tube, TT). Вимірюється вона в дюймах. Проте вибір BMX - справа дуже індивідуальна. Комусь подобається кататися на ко- ротких рамах, комусь на довгих.";
+                        bikenote = "Примітка: ростовкою у BMX називається довжина верхньої труби рами (top tube, TT). Вимірюється вона в дюймах. Проте вибір BMX - справа дуже індивідуальна. Комусь подобається кататися на коротких рамах, комусь на довгих.";
                         break;
                     }
                 case 5:

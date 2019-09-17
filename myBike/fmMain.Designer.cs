@@ -360,7 +360,7 @@
             // lblCalc1Note
             // 
             this.lblCalc1Note.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc1Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCalc1Note.Location = new System.Drawing.Point(8, 310);
             this.lblCalc1Note.Name = "lblCalc1Note";
             this.lblCalc1Note.Size = new System.Drawing.Size(684, 60);
@@ -378,7 +378,7 @@
             this.lblCalc1Value.Name = "lblCalc1Value";
             this.lblCalc1Value.Size = new System.Drawing.Size(362, 130);
             this.lblCalc1Value.TabIndex = 0;
-            this.lblCalc1Value.Text = "Рекомендується розмір рами 13\\\"-14\\\" або 33-35 сантиметрів (XS).";
+            this.lblCalc1Value.Text = "Рекомендується розмір рами 13\"-14\" або 33-35 сантиметрів (XS).";
             this.lblCalc1Value.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnlCalc2
