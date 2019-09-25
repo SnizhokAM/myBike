@@ -1325,7 +1325,6 @@
             // tbCalc6AirResistance
             // 
             this.tbCalc6AirResistance.BackColor = System.Drawing.SystemColors.Window;
-            this.tbCalc6AirResistance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCalc6AirResistance.Location = new System.Drawing.Point(8, 277);
             this.tbCalc6AirResistance.Name = "tbCalc6AirResistance";
             this.tbCalc6AirResistance.ReadOnly = true;
