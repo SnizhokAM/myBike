@@ -63,44 +63,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="apCore.cs" />
-    <Compile Include="fmAbout.cs">
+    <Compile Include="ApCore.cs" />
+    <Compile Include="FmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmAbout.Designer.cs">
-      <DependentUpon>fmAbout.cs</DependentUpon>
+    <Compile Include="FmAbout.Designer.cs">
+      <DependentUpon>FmAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmAirResist.cs">
+    <Compile Include="FmAirResist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmAirResist.Designer.cs">
-      <DependentUpon>fmAirResist.cs</DependentUpon>
+    <Compile Include="FmAirResist.Designer.cs">
+      <DependentUpon>FmAirResist.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmMain.cs">
+    <Compile Include="FmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmMain.Designer.cs">
-      <DependentUpon>fmMain.cs</DependentUpon>
+    <Compile Include="FmMain.Designer.cs">
+      <DependentUpon>FmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmSplash.cs">
+    <Compile Include="FmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmSplash.Designer.cs">
-      <DependentUpon>fmSplash.cs</DependentUpon>
+    <Compile Include="FmSplash.Designer.cs">
+      <DependentUpon>FmSplash.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fmAbout.resx">
-      <DependentUpon>fmAbout.cs</DependentUpon>
+    <EmbeddedResource Include="FmAbout.resx">
+      <DependentUpon>FmAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmAirResist.resx">
-      <DependentUpon>fmAirResist.cs</DependentUpon>
+    <EmbeddedResource Include="FmAirResist.resx">
+      <DependentUpon>FmAirResist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmMain.resx">
-      <DependentUpon>fmMain.cs</DependentUpon>
+    <EmbeddedResource Include="FmMain.resx">
+      <DependentUpon>FmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmSplash.resx">
-      <DependentUpon>fmSplash.cs</DependentUpon>
+    <EmbeddedResource Include="FmSplash.resx">
+      <DependentUpon>FmSplash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

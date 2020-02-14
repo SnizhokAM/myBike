@@ -27,13 +27,13 @@ namespace myBike
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            fmSplash SplashScreen = new fmSplash();
+            FmSplash SplashScreen = new FmSplash();
             SplashScreen.Show();
             while (SplashScreen.tmSplash.Enabled)
             {
                 Application.DoEvents();
             }
-            Application.Run(new fmMain(SplashScreen));
+            Application.Run(new FmMain(SplashScreen));
         }
     }
 }

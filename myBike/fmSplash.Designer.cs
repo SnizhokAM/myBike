@@ -1,6 +1,6 @@
 ﻿namespace myBike
 {
-    partial class fmSplash
+    partial class FmSplash
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmSplash));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSplash));
             this.tmSplash = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 

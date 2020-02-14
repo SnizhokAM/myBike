@@ -1,6 +1,6 @@
 ﻿namespace myBike
 {
-    partial class fmAbout
+    partial class FmAbout
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmAbout));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmAbout));
             this.btnExit = new System.Windows.Forms.Button();
             this.pbAbout = new System.Windows.Forms.PictureBox();
             this.lbAbout = new System.Windows.Forms.Label();
@@ -39,6 +39,7 @@
             // btnExit
             // 
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnExit.Location = new System.Drawing.Point(261, 152);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 24);
@@ -63,18 +64,19 @@
             // 
             this.lbAbout.AutoSize = true;
             this.lbAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(204)));
-            this.lbAbout.ForeColor = System.Drawing.Color.White;
+            this.lbAbout.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbAbout.Location = new System.Drawing.Point(198, 16);
             this.lbAbout.Name = "lbAbout";
             this.lbAbout.Size = new System.Drawing.Size(167, 90);
             this.lbAbout.TabIndex = 2;
-            this.lbAbout.Text = "myBike (Cycling calculator)\r\nВелосипедний калькулятор\r\nVersion 1.0.0\r\nCopyright ©" +
-    " 2019 Snowsoft \r\n\r\nThis program is free software\r\n";
+            this.lbAbout.Text = "myBike (Cycling calculator)\r\nВелосипедний калькулятор\r\nVersion 1.1.0\r\nCopyright ©" +
+    " 2020 Snowsoft \r\n\r\nThis program is free software\r\n";
             // 
             // llblGPL
             // 
             this.llblGPL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.llblGPL.LinkColor = System.Drawing.Color.White;
+            this.llblGPL.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.llblGPL.LinkColor = System.Drawing.SystemColors.HotTrack;
             this.llblGPL.Location = new System.Drawing.Point(198, 118);
             this.llblGPL.Name = "llblGPL";
             this.llblGPL.Size = new System.Drawing.Size(167, 23);
@@ -84,11 +86,11 @@
             this.llblGPL.VisitedLinkColor = System.Drawing.Color.Silver;
             this.llblGPL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblGPL_LinkClicked);
             // 
-            // fmAbout
+            // FmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(373, 188);
             this.Controls.Add(this.llblGPL);
             this.Controls.Add(this.lbAbout);
@@ -98,7 +100,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "fmAbout";
+            this.Name = "FmAbout";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Про програму";

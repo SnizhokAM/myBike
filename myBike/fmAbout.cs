@@ -12,18 +12,13 @@
 // along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace myBike
 {
-    public partial class fmAbout : Form
+    public partial class FmAbout : Form
     {
-        public fmAbout()
+        public FmAbout()
         {
             InitializeComponent();
         }

@@ -13,22 +13,19 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 
 namespace myBike
 {
-    public partial class fmMain : Form
+    public partial class FmMain : Form
     {
-        public fmMain(fmSplash screenform)
+        public FmMain(FmSplash fmSplash)
         {
             InitializeComponent();
-            screenform.Hide();
-            screenform.Dispose();
+            fmSplash.Hide();
+            fmSplash.Dispose();
         }
 
         private CalcSize Calc1;
@@ -47,7 +44,7 @@ namespace myBike
         private int tmp_Temperature = 20;
         private int tmp_Elevation = 120;
 
-        private void fmMain_Load(object sender, EventArgs e)
+        private void FmMain_Load(object sender, EventArgs e)
         {
             Calc1 = new CalcSize();
             Calc2 = new CalcCadence();
@@ -214,7 +211,7 @@ namespace myBike
         private void btnAbout_Click(object sender, EventArgs e)
         {
             btnAbout.BackColor = Color.DimGray;
-            fmAbout AboutProgram = new fmAbout();
+            FmAbout AboutProgram = new FmAbout();
             AboutProgram.ShowDialog();
             AboutProgram.Dispose();
             btnAbout.BackColor = Color.Black;
@@ -571,7 +568,7 @@ namespace myBike
 
         private void btnCalc6AirResistance_Click(object sender, EventArgs e)
         {
-            fmAirResist AirResistance = new fmAirResist(tmp_AeroPosition, tmp_Temperature, tmp_Elevation);
+            FmAirResist AirResistance = new FmAirResist(tmp_AeroPosition, tmp_Temperature, tmp_Elevation);
             AirResistance.ShowDialog();
             tbCalc6AirResistance.Text = (0.5f * BikerArea[AirResistance.AeroPositionValue] * (1.293f - 0.00426f * AirResistance.TemperatureValue) * (float)Math.Exp((float)(-AirResistance.ElevationValue) / 7000f)).ToString();
             tmp_AeroPosition = AirResistance.AeroPositionValue;

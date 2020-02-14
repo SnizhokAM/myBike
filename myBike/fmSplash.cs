@@ -21,9 +21,9 @@ using System.Windows.Forms;
 
 namespace myBike
 {
-    public partial class fmSplash : Form
+    public partial class FmSplash : Form
     {
-        public fmSplash()
+        public FmSplash()
         {
             InitializeComponent();
         }

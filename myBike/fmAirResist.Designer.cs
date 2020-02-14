@@ -1,6 +1,6 @@
 ﻿namespace myBike
 {
-    partial class fmAirResist
+    partial class FmAirResist
     {
         /// <summary>
         /// Required designer variable.
@@ -132,11 +132,11 @@
             this.lblTAeroPosition.TabIndex = 0;
             this.lblTAeroPosition.Text = "Тип посадки:";
             // 
-            // fmAirResist
+            // FmAirResist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(218, 204);
             this.ControlBox = false;
             this.Controls.Add(this.cbAeroPosition);
@@ -148,17 +148,18 @@
             this.Controls.Add(this.lblTTemperature);
             this.Controls.Add(this.lblTAeroPosition);
             this.Controls.Add(this.btnOk);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "fmAirResist";
+            this.Name = "FmAirResist";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Коефіцієнт опору повітря";
             ((System.ComponentModel.ISupportInitialize)(this.tbElevation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbTemperature)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -1,6 +1,6 @@
 ﻿namespace myBike
 {
-    partial class fmMain
+    partial class FmMain
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmMain));
             this.btnCalc1 = new System.Windows.Forms.Button();
             this.btnCalc2 = new System.Windows.Forms.Button();
             this.tbCalc1 = new System.Windows.Forms.TrackBar();
@@ -184,10 +184,11 @@
             // 
             // btnCalc1
             // 
-            this.btnCalc1.BackColor = System.Drawing.Color.DimGray;
+            this.btnCalc1.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc1.ForeColor = System.Drawing.Color.White;
+            this.btnCalc1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalc1.Location = new System.Drawing.Point(1, 0);
+            this.btnCalc1.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalc1.Name = "btnCalc1";
             this.btnCalc1.Size = new System.Drawing.Size(100, 24);
             this.btnCalc1.TabIndex = 1;
@@ -197,10 +198,11 @@
             // 
             // btnCalc2
             // 
-            this.btnCalc2.BackColor = System.Drawing.Color.Black;
+            this.btnCalc2.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc2.ForeColor = System.Drawing.Color.White;
+            this.btnCalc2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalc2.Location = new System.Drawing.Point(101, 0);
+            this.btnCalc2.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalc2.Name = "btnCalc2";
             this.btnCalc2.Size = new System.Drawing.Size(100, 24);
             this.btnCalc2.TabIndex = 2;
@@ -211,8 +213,9 @@
             // tbCalc1
             // 
             this.tbCalc1.AutoSize = false;
-            this.tbCalc1.BackColor = System.Drawing.Color.DimGray;
+            this.tbCalc1.BackColor = System.Drawing.SystemColors.Control;
             this.tbCalc1.Location = new System.Drawing.Point(204, 26);
+            this.tbCalc1.Margin = new System.Windows.Forms.Padding(0);
             this.tbCalc1.Maximum = 215;
             this.tbCalc1.Minimum = 75;
             this.tbCalc1.Name = "tbCalc1";
@@ -232,6 +235,7 @@
             this.gbBikeType1.Controls.Add(this.rbRoad1);
             this.gbBikeType1.Controls.Add(this.rbMTB1);
             this.gbBikeType1.Location = new System.Drawing.Point(8, 8);
+            this.gbBikeType1.Margin = new System.Windows.Forms.Padding(0);
             this.gbBikeType1.Name = "gbBikeType1";
             this.gbBikeType1.Size = new System.Drawing.Size(174, 144);
             this.gbBikeType1.TabIndex = 0;
@@ -303,6 +307,7 @@
             // 
             this.lblCalc1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCalc1.Location = new System.Drawing.Point(214, 8);
+            this.lblCalc1.Margin = new System.Windows.Forms.Padding(0);
             this.lblCalc1.Name = "lblCalc1";
             this.lblCalc1.Size = new System.Drawing.Size(82, 20);
             this.lblCalc1.TabIndex = 0;
@@ -312,6 +317,7 @@
             // 
             this.lblCalc1Height.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCalc1Height.Location = new System.Drawing.Point(264, 74);
+            this.lblCalc1Height.Margin = new System.Windows.Forms.Padding(0);
             this.lblCalc1Height.Name = "lblCalc1Height";
             this.lblCalc1Height.Size = new System.Drawing.Size(80, 24);
             this.lblCalc1Height.TabIndex = 0;
@@ -321,7 +327,7 @@
             // pnlCalc1
             // 
             this.pnlCalc1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlCalc1.BackColor = System.Drawing.Color.DimGray;
+            this.pnlCalc1.BackColor = System.Drawing.SystemColors.Control;
             this.pnlCalc1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCalc1.Controls.Add(this.lblCalc1gb);
             this.pnlCalc1.Controls.Add(this.lblCalc1);
@@ -343,6 +349,7 @@
             // 
             this.lblCalc1gb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCalc1gb.Location = new System.Drawing.Point(14, 8);
+            this.lblCalc1gb.Margin = new System.Windows.Forms.Padding(0);
             this.lblCalc1gb.Name = "lblCalc1gb";
             this.lblCalc1gb.Size = new System.Drawing.Size(92, 14);
             this.lblCalc1gb.TabIndex = 7;
@@ -352,6 +359,7 @@
             // 
             this.pbCalc1.Image = global::myBike.Properties.Resources.mtb;
             this.pbCalc1.Location = new System.Drawing.Point(386, 12);
+            this.pbCalc1.Margin = new System.Windows.Forms.Padding(0);
             this.pbCalc1.Name = "pbCalc1";
             this.pbCalc1.Size = new System.Drawing.Size(300, 210);
             this.pbCalc1.TabIndex = 6;
@@ -362,6 +370,7 @@
             this.lblCalc1Note.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCalc1Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCalc1Note.Location = new System.Drawing.Point(8, 310);
+            this.lblCalc1Note.Margin = new System.Windows.Forms.Padding(0);
             this.lblCalc1Note.Name = "lblCalc1Note";
             this.lblCalc1Note.Size = new System.Drawing.Size(684, 60);
             this.lblCalc1Note.TabIndex = 0;
@@ -375,6 +384,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCalc1Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCalc1Value.Location = new System.Drawing.Point(10, 170);
+            this.lblCalc1Value.Margin = new System.Windows.Forms.Padding(0);
             this.lblCalc1Value.Name = "lblCalc1Value";
             this.lblCalc1Value.Size = new System.Drawing.Size(362, 130);
             this.lblCalc1Value.TabIndex = 0;
@@ -383,7 +393,7 @@
             // 
             // pnlCalc2
             // 
-            this.pnlCalc2.BackColor = System.Drawing.Color.DimGray;
+            this.pnlCalc2.BackColor = System.Drawing.SystemColors.Control;
             this.pnlCalc2.Controls.Add(this.lblCalc2gb);
             this.pnlCalc2.Controls.Add(this.lblCalc2Speed);
             this.pnlCalc2.Controls.Add(this.lblCalc2L);
@@ -403,6 +413,7 @@
             this.hpMain.SetHelpKeyword(this.pnlCalc2, "calc_cadens.htm");
             this.hpMain.SetHelpNavigator(this.pnlCalc2, System.Windows.Forms.HelpNavigator.Topic);
             this.pnlCalc2.Location = new System.Drawing.Point(1, 24);
+            this.pnlCalc2.Margin = new System.Windows.Forms.Padding(0);
             this.pnlCalc2.Name = "pnlCalc2";
             this.hpMain.SetShowHelp(this.pnlCalc2, true);
             this.pnlCalc2.Size = new System.Drawing.Size(700, 392);
@@ -542,7 +553,7 @@
             // tbCalc2Speed
             // 
             this.tbCalc2Speed.AutoSize = false;
-            this.tbCalc2Speed.BackColor = System.Drawing.Color.DimGray;
+            this.tbCalc2Speed.BackColor = System.Drawing.SystemColors.Control;
             this.tbCalc2Speed.Location = new System.Drawing.Point(220, 30);
             this.tbCalc2Speed.Maximum = 60;
             this.tbCalc2Speed.Minimum = 10;
@@ -597,10 +608,11 @@
             // 
             // btnCalc3
             // 
-            this.btnCalc3.BackColor = System.Drawing.Color.Black;
+            this.btnCalc3.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc3.ForeColor = System.Drawing.Color.White;
+            this.btnCalc3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalc3.Location = new System.Drawing.Point(201, 0);
+            this.btnCalc3.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalc3.Name = "btnCalc3";
             this.btnCalc3.Size = new System.Drawing.Size(100, 24);
             this.btnCalc3.TabIndex = 3;
@@ -610,10 +622,11 @@
             // 
             // btnCalc4
             // 
-            this.btnCalc4.BackColor = System.Drawing.Color.Black;
+            this.btnCalc4.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc4.ForeColor = System.Drawing.Color.White;
+            this.btnCalc4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalc4.Location = new System.Drawing.Point(301, 0);
+            this.btnCalc4.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalc4.Name = "btnCalc4";
             this.btnCalc4.Size = new System.Drawing.Size(100, 24);
             this.btnCalc4.TabIndex = 4;
@@ -623,10 +636,11 @@
             // 
             // btnCalc5
             // 
-            this.btnCalc5.BackColor = System.Drawing.Color.Black;
+            this.btnCalc5.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc5.ForeColor = System.Drawing.Color.White;
+            this.btnCalc5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalc5.Location = new System.Drawing.Point(401, 0);
+            this.btnCalc5.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalc5.Name = "btnCalc5";
             this.btnCalc5.Size = new System.Drawing.Size(100, 24);
             this.btnCalc5.TabIndex = 5;
@@ -636,10 +650,11 @@
             // 
             // btnCalc6
             // 
-            this.btnCalc6.BackColor = System.Drawing.Color.Black;
+            this.btnCalc6.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc6.ForeColor = System.Drawing.Color.White;
+            this.btnCalc6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalc6.Location = new System.Drawing.Point(501, 0);
+            this.btnCalc6.Margin = new System.Windows.Forms.Padding(0);
             this.btnCalc6.Name = "btnCalc6";
             this.btnCalc6.Size = new System.Drawing.Size(100, 24);
             this.btnCalc6.TabIndex = 6;
@@ -649,10 +664,11 @@
             // 
             // btnAbout
             // 
-            this.btnAbout.BackColor = System.Drawing.Color.Black;
+            this.btnAbout.BackColor = System.Drawing.SystemColors.Control;
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAbout.ForeColor = System.Drawing.Color.White;
+            this.btnAbout.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAbout.Location = new System.Drawing.Point(601, 0);
+            this.btnAbout.Margin = new System.Windows.Forms.Padding(0);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(100, 24);
             this.btnAbout.TabIndex = 7;
@@ -662,7 +678,7 @@
             // 
             // pnlCalc3
             // 
-            this.pnlCalc3.BackColor = System.Drawing.Color.DimGray;
+            this.pnlCalc3.BackColor = System.Drawing.SystemColors.Control;
             this.pnlCalc3.Controls.Add(this.lblCalc3gb);
             this.pnlCalc3.Controls.Add(this.lblCalc3Cadence);
             this.pnlCalc3.Controls.Add(this.lblCalc3L);
@@ -821,7 +837,7 @@
             // tbCalc3Cadence
             // 
             this.tbCalc3Cadence.AutoSize = false;
-            this.tbCalc3Cadence.BackColor = System.Drawing.Color.DimGray;
+            this.tbCalc3Cadence.BackColor = System.Drawing.SystemColors.Control;
             this.tbCalc3Cadence.LargeChange = 10;
             this.tbCalc3Cadence.Location = new System.Drawing.Point(220, 30);
             this.tbCalc3Cadence.Maximum = 160;
@@ -877,7 +893,7 @@
             // 
             // pnlCalc4
             // 
-            this.pnlCalc4.BackColor = System.Drawing.Color.DimGray;
+            this.pnlCalc4.BackColor = System.Drawing.SystemColors.Control;
             this.pnlCalc4.Controls.Add(this.lblCalc4gb);
             this.pnlCalc4.Controls.Add(this.lblCalc4Cadence);
             this.pnlCalc4.Controls.Add(this.tbCalc4Cadence);
@@ -916,7 +932,7 @@
             // lblCalc4Cadence
             // 
             this.lblCalc4Cadence.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc4Cadence.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCalc4Cadence.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCalc4Cadence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblCalc4Cadence.Location = new System.Drawing.Point(146, 199);
             this.lblCalc4Cadence.Name = "lblCalc4Cadence";
@@ -951,7 +967,7 @@
             // lblCalc4L
             // 
             this.lblCalc4L.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc4L.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCalc4L.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCalc4L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblCalc4L.Location = new System.Drawing.Point(150, 95);
             this.lblCalc4L.Name = "lblCalc4L";
@@ -1062,8 +1078,9 @@
             // tbCalc4Speed
             // 
             this.tbCalc4Speed.AutoSize = false;
-            this.tbCalc4Speed.BackColor = System.Drawing.Color.DimGray;
+            this.tbCalc4Speed.BackColor = System.Drawing.SystemColors.Control;
             this.tbCalc4Speed.Location = new System.Drawing.Point(220, 30);
+            this.tbCalc4Speed.Margin = new System.Windows.Forms.Padding(0);
             this.tbCalc4Speed.Maximum = 60;
             this.tbCalc4Speed.Minimum = 10;
             this.tbCalc4Speed.Name = "tbCalc4Speed";
@@ -1107,7 +1124,7 @@
             // 
             // pnlCalc5
             // 
-            this.pnlCalc5.BackColor = System.Drawing.Color.DimGray;
+            this.pnlCalc5.BackColor = System.Drawing.SystemColors.Control;
             this.pnlCalc5.Controls.Add(this.llblCalc5);
             this.pnlCalc5.Controls.Add(this.lblCalc5L);
             this.pnlCalc5.Controls.Add(this.pbCalc5);
@@ -1118,6 +1135,7 @@
             this.hpMain.SetHelpKeyword(this.pnlCalc5, "calc_computer.htm");
             this.hpMain.SetHelpNavigator(this.pnlCalc5, System.Windows.Forms.HelpNavigator.Topic);
             this.pnlCalc5.Location = new System.Drawing.Point(1, 24);
+            this.pnlCalc5.Margin = new System.Windows.Forms.Padding(0);
             this.pnlCalc5.Name = "pnlCalc5";
             this.hpMain.SetShowHelp(this.pnlCalc5, true);
             this.pnlCalc5.Size = new System.Drawing.Size(700, 392);
@@ -1127,7 +1145,7 @@
             // llblCalc5
             // 
             this.llblCalc5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.llblCalc5.LinkColor = System.Drawing.Color.White;
+            this.llblCalc5.LinkColor = System.Drawing.SystemColors.HotTrack;
             this.llblCalc5.Location = new System.Drawing.Point(8, 243);
             this.llblCalc5.Name = "llblCalc5";
             this.llblCalc5.Size = new System.Drawing.Size(380, 23);
@@ -1190,7 +1208,7 @@
             // 
             // pnlCalc6
             // 
-            this.pnlCalc6.BackColor = System.Drawing.Color.DimGray;
+            this.pnlCalc6.BackColor = System.Drawing.SystemColors.Control;
             this.pnlCalc6.Controls.Add(this.lblWeightLoss);
             this.pnlCalc6.Controls.Add(this.lblCalories);
             this.pnlCalc6.Controls.Add(this.rbCalc6Note3);
@@ -1595,7 +1613,7 @@
             // tbCalc6Distance
             // 
             this.tbCalc6Distance.AutoSize = false;
-            this.tbCalc6Distance.BackColor = System.Drawing.Color.DimGray;
+            this.tbCalc6Distance.BackColor = System.Drawing.SystemColors.Control;
             this.tbCalc6Distance.Location = new System.Drawing.Point(220, 124);
             this.tbCalc6Distance.Maximum = 500;
             this.tbCalc6Distance.Minimum = 1;
@@ -1621,7 +1639,7 @@
             // tbCalc6Speed
             // 
             this.tbCalc6Speed.AutoSize = false;
-            this.tbCalc6Speed.BackColor = System.Drawing.Color.DimGray;
+            this.tbCalc6Speed.BackColor = System.Drawing.SystemColors.Control;
             this.tbCalc6Speed.Location = new System.Drawing.Point(220, 20);
             this.tbCalc6Speed.Maximum = 60;
             this.tbCalc6Speed.Minimum = 5;
@@ -1638,11 +1656,11 @@
             // 
             this.hpMain.HelpNamespace = "myBike.chm";
             // 
-            // fmMain
+            // FmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(702, 417);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnCalc6);
@@ -1651,20 +1669,20 @@
             this.Controls.Add(this.btnCalc3);
             this.Controls.Add(this.btnCalc2);
             this.Controls.Add(this.btnCalc1);
-            this.Controls.Add(this.pnlCalc1);
             this.Controls.Add(this.pnlCalc2);
             this.Controls.Add(this.pnlCalc3);
             this.Controls.Add(this.pnlCalc4);
             this.Controls.Add(this.pnlCalc5);
             this.Controls.Add(this.pnlCalc6);
-            this.ForeColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pnlCalc1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "fmMain";
+            this.Name = "FmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Велосипедний калькулятор - ростовка";
-            this.Load += new System.EventHandler(this.fmMain_Load);
+            this.Load += new System.EventHandler(this.FmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbCalc1)).EndInit();
             this.gbBikeType1.ResumeLayout(false);
             this.gbBikeType1.PerformLayout();

@@ -21,9 +21,9 @@ using System.Windows.Forms;
 
 namespace myBike
 {
-    public partial class fmAirResist : Form
+    public partial class FmAirResist : Form
     {
-        public fmAirResist(int aeroposition, int temperature, int elevation)
+        public FmAirResist(int aeroposition, int temperature, int elevation)
         {
             InitializeComponent();
             string[] AeroPosition = {"Пряма", "Незначний нахил", "Гібридна", "Шосейна", "Аеродинамічна"};
