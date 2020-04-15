@@ -96,8 +96,8 @@ namespace myBike
             cbCalc4A.Items.AddRange(SprocketA);
             cbCalc4A.SelectedIndex = 0;
             ComboBoxAddItemsFromList(cbCalc5L, TireName);
-            cbCalc6TireType.Items.AddRange(TireType);
-            cbCalc6TireType.SelectedIndex = 1;
+            cbCalc1TireType.Items.AddRange(TireType);
+            cbCalc1TireType.SelectedIndex = 1;
         }
 
         private void ComboBoxAddItemsFromList(ComboBox combobox, List<string> list)
@@ -111,12 +111,12 @@ namespace myBike
 
         private void SetDefButtonColor()
         {
-            btnCalc1.BackColor = Color.Black;
-            btnCalc2.BackColor = Color.Black;
-            btnCalc3.BackColor = Color.Black;
-            btnCalc4.BackColor = Color.Black;
-            btnCalc5.BackColor = Color.Black;
-            btnCalc6.BackColor = Color.Black;
+            btnCalc1.ForeColor = SystemColors.ControlText;
+            btnCalc2.ForeColor = SystemColors.ControlText;
+            btnCalc3.ForeColor = SystemColors.ControlText;
+            btnCalc4.ForeColor = SystemColors.ControlText;
+            btnCalc5.ForeColor = SystemColors.ControlText;
+            btnCalc6.ForeColor = SystemColors.ControlText;
         }
 
         private void SetDefPanelState()
@@ -139,22 +139,22 @@ namespace myBike
         {
             this.Text = "Велосипедний калькулятор - ростовка";
             SetDefButtonColor();
-            btnCalc1.BackColor = Color.DimGray;
+            btnCalc6.ForeColor = SystemColors.ActiveCaptionText;
             SetDefPanelState();
-            pnlCalc1.Enabled = true;
-            pnlCalc1.Visible = true;
-            if (rbMTB1.Checked) rbMTB1.Focus();
-            if (rbRoad1.Checked) rbRoad1.Focus();
-            if (rbTouring1.Checked) rbTouring1.Focus();
-            if (rbBMX1.Checked) rbBMX1.Focus();
-            if (rbChild1.Checked) rbChild1.Focus();
+            pnlCalc6.Enabled = true;
+            pnlCalc6.Visible = true;
+            if (rbMTB6.Checked) rbMTB6.Focus();
+            if (rbRoad6.Checked) rbRoad6.Focus();
+            if (rbTouring6.Checked) rbTouring6.Focus();
+            if (rbBMX6.Checked) rbBMX6.Focus();
+            if (rbChild6.Checked) rbChild6.Focus();
         }
 
         private void btnCalc2_Click(object sender, EventArgs e)
         {
             this.Text = "Велосипедний калькулятор - каденс";
             SetDefButtonColor();
-            btnCalc2.BackColor = Color.DimGray;
+            btnCalc2.ForeColor = SystemColors.ActiveCaptionText;
             SetDefPanelState();
             pnlCalc2.Enabled = true;
             pnlCalc2.Visible = true;
@@ -166,7 +166,7 @@ namespace myBike
         {
             this.Text = "Велосипедний калькулятор - швидкість";
             SetDefButtonColor();
-            btnCalc3.BackColor = Color.DimGray;
+            btnCalc3.ForeColor = SystemColors.ActiveCaptionText;
             SetDefPanelState();
             pnlCalc3.Enabled = true;
             pnlCalc3.Visible = true;
@@ -178,7 +178,7 @@ namespace myBike
         {
             this.Text = "Велосипедний калькулятор - касета";
             SetDefButtonColor();
-            btnCalc4.BackColor = Color.DimGray;
+            btnCalc4.ForeColor = SystemColors.ActiveCaptionText;
             SetDefPanelState();
             pnlCalc4.Enabled = true;
             pnlCalc4.Visible = true;
@@ -190,7 +190,7 @@ namespace myBike
         {
             this.Text = "Велосипедний калькулятор - велокомп'ютер";
             SetDefButtonColor();
-            btnCalc5.BackColor = Color.DimGray;
+            btnCalc5.ForeColor = SystemColors.ActiveCaptionText;
             SetDefPanelState();
             pnlCalc5.Enabled = true;
             pnlCalc5.Visible = true;
@@ -201,95 +201,132 @@ namespace myBike
         {
             this.Text = "Велосипедний калькулятор - подорож";
             SetDefButtonColor();
-            btnCalc6.BackColor = Color.DimGray;
+            btnCalc1.ForeColor = SystemColors.ActiveCaptionText;
             SetDefPanelState();
-            pnlCalc6.Enabled = true;
-            pnlCalc6.Visible = true;
-            tbCalc6WeightBiker.Focus();
+            pnlCalc1.Enabled = true;
+            pnlCalc1.Visible = true;
+            tbCalc1WeightBiker.Focus();
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            btnAbout.BackColor = Color.DimGray;
+            btnAbout.ForeColor = SystemColors.ActiveCaptionText;
             FmAbout AboutProgram = new FmAbout();
             AboutProgram.ShowDialog();
             AboutProgram.Dispose();
-            btnAbout.BackColor = Color.Black;
-            if (pnlCalc1.Enabled) pnlCalc1.Focus();
+            btnAbout.ForeColor = SystemColors.ControlText; ;
+            if (pnlCalc6.Enabled) pnlCalc6.Focus();
             if (pnlCalc2.Enabled) pnlCalc2.Focus();
             if (pnlCalc3.Enabled) pnlCalc3.Focus();
             if (pnlCalc4.Enabled) pnlCalc4.Focus();
             if (pnlCalc5.Enabled) pnlCalc5.Focus();
-            if (pnlCalc6.Enabled) pnlCalc6.Focus();
+            if (pnlCalc1.Enabled) pnlCalc1.Focus();
         }
 
-        // Калькулятор #1 "Ростовка" 
+        #region Калькулятор #1 "Потужність"
 
-        private void rbMTB1_CheckedChanged(object sender, EventArgs e)
+        private void tbCalc1Speed_Scroll(object sender, EventArgs e)
+        {
+            lblCalc1Speed.Text = tbCalc1Speed.Value.ToString() + " км/год";
+            Calc1Update();
+        }
+
+        private void tbCalc1Distance_Scroll(object sender, EventArgs e)
+        {
+            lblCalc1Distance.Text = tbCalc1Distance.Value.ToString() + " км";
+            Calc1Update();
+        }
+
+        private void tbCalc1WeightBiker_Scroll(object sender, EventArgs e)
+        {
+            lblCalc1WeightBiker.Text = tbCalc1WeightBiker.Value.ToString() + " кг";
+            Calc1Update();
+        }
+
+        private void tbCalc1WeightBike_Scroll(object sender, EventArgs e)
+        {
+            lblCalc1WeightBike.Text = tbCalc1WeightBike.Value.ToString() + " кг";
+            Calc1Update();
+        }
+
+        private void cbCalc1TireType_SelectedIndexChanged(object sender, EventArgs e)
         {
             Calc1Update();
         }
 
-        private void rbRoad1_CheckedChanged(object sender, EventArgs e)
+        private void tbCalc1Gradient_Scroll(object sender, EventArgs e)
         {
+            lblCalc1Gradient.Text = (0.1 * tbCalc1Gradient.Value).ToString() + " %";
             Calc1Update();
         }
 
-        private void rbTouring1_CheckedChanged(object sender, EventArgs e)
+        private void tbCalc1WindSpeed_Scroll(object sender, EventArgs e)
         {
+            lblCalc1WindSpeed.Text = tbCalc1WindSpeed.Value.ToString() + " м/с";
             Calc1Update();
         }
 
-        private void rbBMX1_CheckedChanged(object sender, EventArgs e)
+        private void btnCalc1AirResistance_Click(object sender, EventArgs e)
         {
+            FmAirResist AirResistance = new FmAirResist(tmp_AeroPosition, tmp_Temperature, tmp_Elevation);
+            AirResistance.ShowDialog();
+            tbCalc1AirResistance.Text = (0.5f * BikerArea[AirResistance.AeroPositionValue] * (1.293f - 0.00426f * AirResistance.TemperatureValue) * (float)Math.Exp((float)(-AirResistance.ElevationValue) / 7000f)).ToString();
+            tmp_AeroPosition = AirResistance.AeroPositionValue;
+            tmp_Temperature = AirResistance.TemperatureValue;
+            tmp_Elevation = AirResistance.ElevationValue;
+            AirResistance.Dispose();
             Calc1Update();
         }
 
-        private void rbChild1_CheckedChanged(object sender, EventArgs e)
+        private void tbCalc1Efficiency_Scroll(object sender, EventArgs e)
         {
+            lblCalc1Efficiency.Text = tbCalc1Efficiency.Value.ToString() + " %";
             Calc1Update();
         }
 
-        private void tbCalc1_Scroll(object sender, EventArgs e)
+        private void rbCalc1Note1_CheckedChanged(object sender, EventArgs e)
         {
-            lblCalc1Height.Text = tbCalc1.Value.ToString() + " см";
-            Calc1Update();
+            Calc1NoteUpdate();
+        }
+
+        private void rbCalc1Note2_CheckedChanged(object sender, EventArgs e)
+        {
+            Calc1NoteUpdate();
+        }
+
+        private void rbCalc1Note3_CheckedChanged(object sender, EventArgs e)
+        {
+            Calc1NoteUpdate();
+        }
+
+        private void Calc1NoteUpdate()
+        {
+            if (rbCalc1Note1.Checked)
+            {
+                pbCalc1.Image = Properties.Resources.aerobar;
+            }
+            if (rbCalc1Note2.Checked)
+            {
+                pbCalc1.Image = Properties.Resources.efficiency;
+            }
+            if (rbCalc1Note3.Checked)
+            {
+                pbCalc1.Image = Properties.Resources.power_time;
+            }
         }
 
         private void Calc1Update()
         {
-            if (rbMTB1.Checked)
+            if (cbCalc1TireType.SelectedIndex != -1)
             {
-                pbCalc1.Image = Properties.Resources.mtb;
-                lblCalc1Value.Text = Calc1.GetValue(1, tbCalc1.Value);
-                lblCalc1Note.Text = Calc1.GetNote(1);
-            }
-            if (rbRoad1.Checked)
-            {
-                pbCalc1.Image = Properties.Resources.road;
-                lblCalc1Value.Text = Calc1.GetValue(2, tbCalc1.Value);
-                lblCalc1Note.Text = Calc1.GetNote(2);
-            }
-            if (rbTouring1.Checked)
-            {
-                pbCalc1.Image = Properties.Resources.tour;
-                lblCalc1Value.Text = Calc1.GetValue(3, tbCalc1.Value);
-                lblCalc1Note.Text = Calc1.GetNote(3);
-            }
-            if (rbBMX1.Checked)
-            {
-                pbCalc1.Image = Properties.Resources.bmx;
-                lblCalc1Value.Text = Calc1.GetValue(4, tbCalc1.Value);
-                lblCalc1Note.Text = Calc1.GetNote(4);
-            }
-            if (rbChild1.Checked)
-            {
-                pbCalc1.Image = Properties.Resources.kids;
-                lblCalc1Value.Text = Calc1.GetValue(5, tbCalc1.Value);
-                lblCalc1Note.Text = Calc1.GetNote(5);
+                lblCalc1Power.Text = Calc6.GetPowerValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value);
+                lblCalc1TripTime.Text = Calc6.GetTripTimeValue(tbCalc1Distance.Value, tbCalc1Speed.Value);
+                lblCalc1Calories.Text = Calc6.GetCaloriesValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value, tbCalc1Distance.Value);
+                lblCalc1WeightLoss.Text = Calc6.GetWeightLossValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value, tbCalc1Distance.Value);
             }
         }
 
+        #endregion
         // Калькулятор #2 "Каденс" 
 
         private void rbCalc2D_CheckedChanged(object sender, EventArgs e)
@@ -523,107 +560,71 @@ namespace myBike
             System.Diagnostics.Process.Start("https://drive.google.com/open?id=1E0ymR-hGUBh2kr-ruo77w4zkaEc6xG20");
         }
 
-        // Калькулятор #6 "Потужність"
+        // Калькулятор #6 "Ростовка" 
 
-        private void tbCalc6Speed_Scroll(object sender, EventArgs e)
-        {
-            lblCalc6Speed.Text = tbCalc6Speed.Value.ToString() + " км/год";
-            Calc6Update();
-        }
-
-        private void tbCalc6Distance_Scroll(object sender, EventArgs e)
-        {
-            lblCalc6Distance.Text = tbCalc6Distance.Value.ToString() + " км";
-            Calc6Update();
-        }
-
-        private void tbCalc6WeightBiker_Scroll(object sender, EventArgs e)
-        {
-            lblCalc6WeightBiker.Text = tbCalc6WeightBiker.Value.ToString() + " кг";
-            Calc6Update();
-        }
-
-        private void tbCalc6WeightBike_Scroll(object sender, EventArgs e)
-        {
-            lblCalc6WeightBike.Text = tbCalc6WeightBike.Value.ToString() + " кг";
-            Calc6Update();
-        }
-
-        private void cbCalc6TireType_SelectedIndexChanged(object sender, EventArgs e)
+        private void rbMTB6_CheckedChanged(object sender, EventArgs e)
         {
             Calc6Update();
         }
 
-        private void tbCalc6Gradient_Scroll(object sender, EventArgs e)
+        private void rbRoad6_CheckedChanged(object sender, EventArgs e)
         {
-            lblCalc6Gradient.Text = (0.1 * tbCalc6Gradient.Value).ToString() + " %";
             Calc6Update();
         }
 
-        private void tbCalc6WindSpeed_Scroll(object sender, EventArgs e)
+        private void rbTouring6_CheckedChanged(object sender, EventArgs e)
         {
-            lblCalc6WindSpeed.Text = tbCalc6WindSpeed.Value.ToString() + " м/с";
             Calc6Update();
         }
 
-        private void btnCalc6AirResistance_Click(object sender, EventArgs e)
+        private void rbBMX6_CheckedChanged(object sender, EventArgs e)
         {
-            FmAirResist AirResistance = new FmAirResist(tmp_AeroPosition, tmp_Temperature, tmp_Elevation);
-            AirResistance.ShowDialog();
-            tbCalc6AirResistance.Text = (0.5f * BikerArea[AirResistance.AeroPositionValue] * (1.293f - 0.00426f * AirResistance.TemperatureValue) * (float)Math.Exp((float)(-AirResistance.ElevationValue) / 7000f)).ToString();
-            tmp_AeroPosition = AirResistance.AeroPositionValue;
-            tmp_Temperature = AirResistance.TemperatureValue;
-            tmp_Elevation = AirResistance.ElevationValue;
-            AirResistance.Dispose();
             Calc6Update();
         }
 
-        private void tbCalc6Efficiency_Scroll(object sender, EventArgs e)
+        private void rbChild6_CheckedChanged(object sender, EventArgs e)
         {
-            lblCalc6Efficiency.Text = tbCalc6Efficiency.Value.ToString() + " %";
             Calc6Update();
         }
 
-        private void rbCalc6Note1_CheckedChanged(object sender, EventArgs e)
+        private void tbCalc6_Scroll(object sender, EventArgs e)
         {
-            Calc6NoteUpdate();
-        }
-
-        private void rbCalc6Note2_CheckedChanged(object sender, EventArgs e)
-        {
-            Calc6NoteUpdate();
-        }
-
-        private void rbCalc6Note3_CheckedChanged(object sender, EventArgs e)
-        {
-            Calc6NoteUpdate();
-        }
-
-        private void Calc6NoteUpdate()
-        {
-            if (rbCalc6Note1.Checked)
-            {
-                pbCalc6.Image = Properties.Resources.aerobar;
-            }
-            if (rbCalc6Note2.Checked)
-            {
-                pbCalc6.Image = Properties.Resources.efficiency;
-            }
-            if (rbCalc6Note3.Checked)
-            {
-                pbCalc6.Image = Properties.Resources.power_time;
-            }
+            lblCalc6Height.Text = tbCalc6.Value.ToString() + " см";
+            Calc6Update();
         }
 
         private void Calc6Update()
         {
-            if (cbCalc6TireType.SelectedIndex != -1)
+            if (rbMTB6.Checked)
             {
-                lblCalc6Power.Text = Calc6.GetPowerValue(tbCalc6WeightBiker.Value, tbCalc6WeightBike.Value, 0.1f * tbCalc6Gradient.Value, RollingResistance[cbCalc6TireType.SelectedIndex], tbCalc6Speed.Value, tbCalc6WindSpeed.Value, (float)Convert.ToDouble(tbCalc6AirResistance.Text), tbCalc6Efficiency.Value);
-                lblCalc6TripTime.Text = Calc6.GetTripTimeValue(tbCalc6Distance.Value, tbCalc6Speed.Value);
-                lblCalories.Text = Calc6.GetCaloriesValue(tbCalc6WeightBiker.Value, tbCalc6WeightBike.Value, 0.1f * tbCalc6Gradient.Value, RollingResistance[cbCalc6TireType.SelectedIndex], tbCalc6Speed.Value, tbCalc6WindSpeed.Value, (float)Convert.ToDouble(tbCalc6AirResistance.Text), tbCalc6Efficiency.Value, tbCalc6Distance.Value);
-                lblWeightLoss.Text = Calc6.GetWeightLossValue(tbCalc6WeightBiker.Value, tbCalc6WeightBike.Value, 0.1f * tbCalc6Gradient.Value, RollingResistance[cbCalc6TireType.SelectedIndex], tbCalc6Speed.Value, tbCalc6WindSpeed.Value, (float)Convert.ToDouble(tbCalc6AirResistance.Text), tbCalc6Efficiency.Value, tbCalc6Distance.Value);
+                pbCalc6.Image = Properties.Resources.mtb;
+                lblCalc6Value.Text = Calc1.GetValue(1, tbCalc6.Value);
+                lblCalc6Note.Text = Calc1.GetNote(1);
             }
-        }
+            if (rbRoad6.Checked)
+            {
+                pbCalc6.Image = Properties.Resources.road;
+                lblCalc6Value.Text = Calc1.GetValue(2, tbCalc6.Value);
+                lblCalc6Note.Text = Calc1.GetNote(2);
+            }
+            if (rbTouring6.Checked)
+            {
+                pbCalc6.Image = Properties.Resources.tour;
+                lblCalc6Value.Text = Calc1.GetValue(3, tbCalc6.Value);
+                lblCalc6Note.Text = Calc1.GetNote(3);
+            }
+            if (rbBMX6.Checked)
+            {
+                pbCalc6.Image = Properties.Resources.bmx;
+                lblCalc6Value.Text = Calc1.GetValue(4, tbCalc6.Value);
+                lblCalc6Note.Text = Calc1.GetNote(4);
+            }
+            if (rbChild6.Checked)
+            {
+                pbCalc6.Image = Properties.Resources.kids;
+                lblCalc6Value.Text = Calc1.GetValue(5, tbCalc6.Value);
+                lblCalc6Note.Text = Calc1.GetNote(5);
+            }
+        }     
     }
 }

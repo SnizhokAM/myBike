@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmMain));
-            this.btnCalc1 = new System.Windows.Forms.Button();
+            this.btnCalc6 = new System.Windows.Forms.Button();
             this.btnCalc2 = new System.Windows.Forms.Button();
-            this.tbCalc1 = new System.Windows.Forms.TrackBar();
+            this.tbCalc6 = new System.Windows.Forms.TrackBar();
             this.gbBikeType1 = new System.Windows.Forms.GroupBox();
-            this.rbTouring1 = new System.Windows.Forms.RadioButton();
-            this.rbChild1 = new System.Windows.Forms.RadioButton();
-            this.rbBMX1 = new System.Windows.Forms.RadioButton();
-            this.rbRoad1 = new System.Windows.Forms.RadioButton();
-            this.rbMTB1 = new System.Windows.Forms.RadioButton();
-            this.lblCalc1 = new System.Windows.Forms.Label();
-            this.lblCalc1Height = new System.Windows.Forms.Label();
-            this.pnlCalc1 = new System.Windows.Forms.Panel();
-            this.lblCalc1gb = new System.Windows.Forms.Label();
-            this.pbCalc1 = new System.Windows.Forms.PictureBox();
-            this.lblCalc1Note = new System.Windows.Forms.Label();
-            this.lblCalc1Value = new System.Windows.Forms.Label();
+            this.rbTouring6 = new System.Windows.Forms.RadioButton();
+            this.rbChild6 = new System.Windows.Forms.RadioButton();
+            this.rbBMX6 = new System.Windows.Forms.RadioButton();
+            this.rbRoad6 = new System.Windows.Forms.RadioButton();
+            this.rbMTB6 = new System.Windows.Forms.RadioButton();
+            this.lblCalc6 = new System.Windows.Forms.Label();
+            this.lblCalc6Height = new System.Windows.Forms.Label();
+            this.pnlCalc6 = new System.Windows.Forms.Panel();
+            this.lblCalc6gb = new System.Windows.Forms.Label();
+            this.pbCalc6 = new System.Windows.Forms.PictureBox();
+            this.lblCalc6Note = new System.Windows.Forms.Label();
+            this.lblCalc6Value = new System.Windows.Forms.Label();
             this.pnlCalc2 = new System.Windows.Forms.Panel();
             this.lblCalc2gb = new System.Windows.Forms.Label();
             this.lblCalc2Speed = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.btnCalc3 = new System.Windows.Forms.Button();
             this.btnCalc4 = new System.Windows.Forms.Button();
             this.btnCalc5 = new System.Windows.Forms.Button();
-            this.btnCalc6 = new System.Windows.Forms.Button();
+            this.btnCalc1 = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.pnlCalc3 = new System.Windows.Forms.Panel();
             this.lblCalc3gb = new System.Windows.Forms.Label();
@@ -112,47 +112,47 @@
             this.lblCalc5Value = new System.Windows.Forms.Label();
             this.cbCalc5L = new System.Windows.Forms.ComboBox();
             this.lblCalc5Note = new System.Windows.Forms.Label();
-            this.pnlCalc6 = new System.Windows.Forms.Panel();
-            this.lblWeightLoss = new System.Windows.Forms.Label();
-            this.lblCalories = new System.Windows.Forms.Label();
-            this.rbCalc6Note3 = new System.Windows.Forms.RadioButton();
-            this.rbCalc6Note2 = new System.Windows.Forms.RadioButton();
-            this.rbCalc6Note1 = new System.Windows.Forms.RadioButton();
-            this.lblCalc6TDistance = new System.Windows.Forms.Label();
-            this.cbCalc6TireType = new System.Windows.Forms.ComboBox();
-            this.tbCalc6AirResistance = new System.Windows.Forms.TextBox();
-            this.btnCalc6AirResistance = new System.Windows.Forms.Button();
-            this.lblCalc6WindSpeed = new System.Windows.Forms.Label();
-            this.lblCalc6Gradient = new System.Windows.Forms.Label();
-            this.lblCalc6Efficiency = new System.Windows.Forms.Label();
-            this.tbCalc6WindSpeed = new System.Windows.Forms.TrackBar();
-            this.tbCalc6Gradient = new System.Windows.Forms.TrackBar();
-            this.tbCalc6Efficiency = new System.Windows.Forms.TrackBar();
-            this.lblCalc6TEfficiency = new System.Windows.Forms.Label();
-            this.lblCalc6AirResistance = new System.Windows.Forms.Label();
-            this.lblCalc6TWindSpeed = new System.Windows.Forms.Label();
-            this.lblCalc6TGradient = new System.Windows.Forms.Label();
-            this.lblCalc6WeightBike = new System.Windows.Forms.Label();
-            this.tbCalc6WeightBike = new System.Windows.Forms.TrackBar();
-            this.lblCalc6WeightBiker = new System.Windows.Forms.Label();
-            this.lblCalc6TWeightBike = new System.Windows.Forms.Label();
-            this.lblCalc6Distance = new System.Windows.Forms.Label();
-            this.lblCalc6Speed = new System.Windows.Forms.Label();
-            this.lblCalc6TireType = new System.Windows.Forms.Label();
-            this.tbCalc6WeightBiker = new System.Windows.Forms.TrackBar();
-            this.pbCalc6 = new System.Windows.Forms.PictureBox();
-            this.lblCalc6TripTime = new System.Windows.Forms.Label();
-            this.lblCalc6Power = new System.Windows.Forms.Label();
-            this.lblCalc6TWeightBiker = new System.Windows.Forms.Label();
-            this.lblCalc6TSpeed = new System.Windows.Forms.Label();
-            this.tbCalc6Distance = new System.Windows.Forms.TrackBar();
-            this.lblCalc6Note = new System.Windows.Forms.Label();
-            this.tbCalc6Speed = new System.Windows.Forms.TrackBar();
+            this.pnlCalc1 = new System.Windows.Forms.Panel();
+            this.lblCalc1WeightLoss = new System.Windows.Forms.Label();
+            this.lblCalc1Calories = new System.Windows.Forms.Label();
+            this.rbCalc1Note3 = new System.Windows.Forms.RadioButton();
+            this.rbCalc1Note2 = new System.Windows.Forms.RadioButton();
+            this.rbCalc1Note1 = new System.Windows.Forms.RadioButton();
+            this.lblCalc1TDistance = new System.Windows.Forms.Label();
+            this.cbCalc1TireType = new System.Windows.Forms.ComboBox();
+            this.tbCalc1AirResistance = new System.Windows.Forms.TextBox();
+            this.btnCalc1AirResistance = new System.Windows.Forms.Button();
+            this.lblCalc1WindSpeed = new System.Windows.Forms.Label();
+            this.lblCalc1Gradient = new System.Windows.Forms.Label();
+            this.lblCalc1Efficiency = new System.Windows.Forms.Label();
+            this.tbCalc1WindSpeed = new System.Windows.Forms.TrackBar();
+            this.tbCalc1Gradient = new System.Windows.Forms.TrackBar();
+            this.tbCalc1Efficiency = new System.Windows.Forms.TrackBar();
+            this.lblCalc1TEfficiency = new System.Windows.Forms.Label();
+            this.lblCalc1AirResistance = new System.Windows.Forms.Label();
+            this.lblCalc1TWindSpeed = new System.Windows.Forms.Label();
+            this.lblCalc1TGradient = new System.Windows.Forms.Label();
+            this.lblCalc1WeightBike = new System.Windows.Forms.Label();
+            this.tbCalc1WeightBike = new System.Windows.Forms.TrackBar();
+            this.lblCalc1WeightBiker = new System.Windows.Forms.Label();
+            this.lblCalc1TWeightBike = new System.Windows.Forms.Label();
+            this.lblCalc1Distance = new System.Windows.Forms.Label();
+            this.lblCalc1Speed = new System.Windows.Forms.Label();
+            this.lblCalc1TireType = new System.Windows.Forms.Label();
+            this.tbCalc1WeightBiker = new System.Windows.Forms.TrackBar();
+            this.pbCalc1 = new System.Windows.Forms.PictureBox();
+            this.lblCalc1TripTime = new System.Windows.Forms.Label();
+            this.lblCalc1Power = new System.Windows.Forms.Label();
+            this.lblCalc1TWeightBiker = new System.Windows.Forms.Label();
+            this.lblCalc1TSpeed = new System.Windows.Forms.Label();
+            this.tbCalc1Distance = new System.Windows.Forms.TrackBar();
+            this.lblCalc1Note = new System.Windows.Forms.Label();
+            this.tbCalc1Speed = new System.Windows.Forms.TrackBar();
             this.hpMain = new System.Windows.Forms.HelpProvider();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6)).BeginInit();
             this.gbBikeType1.SuspendLayout();
-            this.pnlCalc1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalc1)).BeginInit();
+            this.pnlCalc6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalc6)).BeginInit();
             this.pnlCalc2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbCalc2L)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCalc2)).BeginInit();
@@ -171,30 +171,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbCalc4Speed)).BeginInit();
             this.pnlCalc5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCalc5)).BeginInit();
-            this.pnlCalc6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6WindSpeed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Gradient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Efficiency)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6WeightBike)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6WeightBiker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalc6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Distance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Speed)).BeginInit();
+            this.pnlCalc1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1WindSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Gradient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Efficiency)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1WeightBike)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1WeightBiker)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Distance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Speed)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnCalc1
+            // btnCalc6
             // 
-            this.btnCalc1.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCalc1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCalc1.Location = new System.Drawing.Point(1, 0);
-            this.btnCalc1.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCalc1.Name = "btnCalc1";
-            this.btnCalc1.Size = new System.Drawing.Size(100, 24);
-            this.btnCalc1.TabIndex = 1;
-            this.btnCalc1.Text = "Ростовка";
-            this.btnCalc1.UseVisualStyleBackColor = false;
-            this.btnCalc1.Click += new System.EventHandler(this.btnCalc1_Click);
+            this.btnCalc6.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCalc6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalc6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCalc6.Location = new System.Drawing.Point(501, 0);
+            this.btnCalc6.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCalc6.Name = "btnCalc6";
+            this.btnCalc6.Size = new System.Drawing.Size(100, 24);
+            this.btnCalc6.TabIndex = 6;
+            this.btnCalc6.Text = "Ростовка";
+            this.btnCalc6.UseVisualStyleBackColor = false;
+            this.btnCalc6.Click += new System.EventHandler(this.btnCalc1_Click);
             // 
             // btnCalc2
             // 
@@ -210,30 +210,30 @@
             this.btnCalc2.UseVisualStyleBackColor = false;
             this.btnCalc2.Click += new System.EventHandler(this.btnCalc2_Click);
             // 
-            // tbCalc1
+            // tbCalc6
             // 
-            this.tbCalc1.AutoSize = false;
-            this.tbCalc1.BackColor = System.Drawing.SystemColors.Control;
-            this.tbCalc1.Location = new System.Drawing.Point(204, 26);
-            this.tbCalc1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbCalc1.Maximum = 215;
-            this.tbCalc1.Minimum = 75;
-            this.tbCalc1.Name = "tbCalc1";
-            this.tbCalc1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.tbCalc1.Size = new System.Drawing.Size(42, 132);
-            this.tbCalc1.TabIndex = 2;
-            this.tbCalc1.TickFrequency = 10;
-            this.tbCalc1.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.tbCalc1.Value = 150;
-            this.tbCalc1.Scroll += new System.EventHandler(this.tbCalc1_Scroll);
+            this.tbCalc6.AutoSize = false;
+            this.tbCalc6.BackColor = System.Drawing.SystemColors.Control;
+            this.tbCalc6.Location = new System.Drawing.Point(204, 26);
+            this.tbCalc6.Margin = new System.Windows.Forms.Padding(0);
+            this.tbCalc6.Maximum = 215;
+            this.tbCalc6.Minimum = 75;
+            this.tbCalc6.Name = "tbCalc6";
+            this.tbCalc6.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.tbCalc6.Size = new System.Drawing.Size(42, 132);
+            this.tbCalc6.TabIndex = 2;
+            this.tbCalc6.TickFrequency = 10;
+            this.tbCalc6.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.tbCalc6.Value = 150;
+            this.tbCalc6.Scroll += new System.EventHandler(this.tbCalc6_Scroll);
             // 
             // gbBikeType1
             // 
-            this.gbBikeType1.Controls.Add(this.rbTouring1);
-            this.gbBikeType1.Controls.Add(this.rbChild1);
-            this.gbBikeType1.Controls.Add(this.rbBMX1);
-            this.gbBikeType1.Controls.Add(this.rbRoad1);
-            this.gbBikeType1.Controls.Add(this.rbMTB1);
+            this.gbBikeType1.Controls.Add(this.rbTouring6);
+            this.gbBikeType1.Controls.Add(this.rbChild6);
+            this.gbBikeType1.Controls.Add(this.rbBMX6);
+            this.gbBikeType1.Controls.Add(this.rbRoad6);
+            this.gbBikeType1.Controls.Add(this.rbMTB6);
             this.gbBikeType1.Location = new System.Drawing.Point(8, 8);
             this.gbBikeType1.Margin = new System.Windows.Forms.Padding(0);
             this.gbBikeType1.Name = "gbBikeType1";
@@ -241,155 +241,156 @@
             this.gbBikeType1.TabIndex = 0;
             this.gbBikeType1.TabStop = false;
             // 
-            // rbTouring1
+            // rbTouring6
             // 
-            this.rbTouring1.AutoSize = true;
-            this.rbTouring1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbTouring1.Location = new System.Drawing.Point(8, 68);
-            this.rbTouring1.Name = "rbTouring1";
-            this.rbTouring1.Size = new System.Drawing.Size(154, 17);
-            this.rbTouring1.TabIndex = 3;
-            this.rbTouring1.Text = "Туристичний, трекінговий";
-            this.rbTouring1.UseVisualStyleBackColor = true;
-            this.rbTouring1.CheckedChanged += new System.EventHandler(this.rbTouring1_CheckedChanged);
+            this.rbTouring6.AutoSize = true;
+            this.rbTouring6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbTouring6.Location = new System.Drawing.Point(8, 68);
+            this.rbTouring6.Name = "rbTouring6";
+            this.rbTouring6.Size = new System.Drawing.Size(154, 17);
+            this.rbTouring6.TabIndex = 3;
+            this.rbTouring6.Text = "Туристичний, трекінговий";
+            this.rbTouring6.UseVisualStyleBackColor = true;
+            this.rbTouring6.CheckedChanged += new System.EventHandler(this.rbTouring6_CheckedChanged);
             // 
-            // rbChild1
+            // rbChild6
             // 
-            this.rbChild1.AutoSize = true;
-            this.rbChild1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbChild1.Location = new System.Drawing.Point(8, 116);
-            this.rbChild1.Name = "rbChild1";
-            this.rbChild1.Size = new System.Drawing.Size(67, 17);
-            this.rbChild1.TabIndex = 5;
-            this.rbChild1.Text = "Дитячий";
-            this.rbChild1.UseVisualStyleBackColor = true;
-            this.rbChild1.CheckedChanged += new System.EventHandler(this.rbChild1_CheckedChanged);
+            this.rbChild6.AutoSize = true;
+            this.rbChild6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbChild6.Location = new System.Drawing.Point(8, 116);
+            this.rbChild6.Name = "rbChild6";
+            this.rbChild6.Size = new System.Drawing.Size(67, 17);
+            this.rbChild6.TabIndex = 5;
+            this.rbChild6.Text = "Дитячий";
+            this.rbChild6.UseVisualStyleBackColor = true;
+            this.rbChild6.CheckedChanged += new System.EventHandler(this.rbChild6_CheckedChanged);
             // 
-            // rbBMX1
+            // rbBMX6
             // 
-            this.rbBMX1.AutoSize = true;
-            this.rbBMX1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbBMX1.Location = new System.Drawing.Point(8, 92);
-            this.rbBMX1.Name = "rbBMX1";
-            this.rbBMX1.Size = new System.Drawing.Size(47, 17);
-            this.rbBMX1.TabIndex = 4;
-            this.rbBMX1.Text = "BMX";
-            this.rbBMX1.UseVisualStyleBackColor = true;
-            this.rbBMX1.CheckedChanged += new System.EventHandler(this.rbBMX1_CheckedChanged);
+            this.rbBMX6.AutoSize = true;
+            this.rbBMX6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbBMX6.Location = new System.Drawing.Point(8, 92);
+            this.rbBMX6.Name = "rbBMX6";
+            this.rbBMX6.Size = new System.Drawing.Size(47, 17);
+            this.rbBMX6.TabIndex = 4;
+            this.rbBMX6.Text = "BMX";
+            this.rbBMX6.UseVisualStyleBackColor = true;
+            this.rbBMX6.CheckedChanged += new System.EventHandler(this.rbBMX6_CheckedChanged);
             // 
-            // rbRoad1
+            // rbRoad6
             // 
-            this.rbRoad1.AutoSize = true;
-            this.rbRoad1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbRoad1.Location = new System.Drawing.Point(8, 44);
-            this.rbRoad1.Name = "rbRoad1";
-            this.rbRoad1.Size = new System.Drawing.Size(131, 17);
-            this.rbRoad1.TabIndex = 2;
-            this.rbRoad1.Text = "Шосейний, дорожний";
-            this.rbRoad1.UseVisualStyleBackColor = true;
-            this.rbRoad1.CheckedChanged += new System.EventHandler(this.rbRoad1_CheckedChanged);
+            this.rbRoad6.AutoSize = true;
+            this.rbRoad6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbRoad6.Location = new System.Drawing.Point(8, 44);
+            this.rbRoad6.Name = "rbRoad6";
+            this.rbRoad6.Size = new System.Drawing.Size(131, 17);
+            this.rbRoad6.TabIndex = 2;
+            this.rbRoad6.Text = "Шосейний, дорожний";
+            this.rbRoad6.UseVisualStyleBackColor = true;
+            this.rbRoad6.CheckedChanged += new System.EventHandler(this.rbRoad6_CheckedChanged);
             // 
-            // rbMTB1
+            // rbMTB6
             // 
-            this.rbMTB1.AutoSize = true;
-            this.rbMTB1.Checked = true;
-            this.rbMTB1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbMTB1.Location = new System.Drawing.Point(8, 20);
-            this.rbMTB1.Name = "rbMTB1";
-            this.rbMTB1.Size = new System.Drawing.Size(130, 17);
-            this.rbMTB1.TabIndex = 1;
-            this.rbMTB1.TabStop = true;
-            this.rbMTB1.Text = "MTB, гібрид, міський";
-            this.rbMTB1.UseVisualStyleBackColor = true;
-            this.rbMTB1.CheckedChanged += new System.EventHandler(this.rbMTB1_CheckedChanged);
+            this.rbMTB6.AutoSize = true;
+            this.rbMTB6.Checked = true;
+            this.rbMTB6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbMTB6.Location = new System.Drawing.Point(8, 20);
+            this.rbMTB6.Name = "rbMTB6";
+            this.rbMTB6.Size = new System.Drawing.Size(130, 17);
+            this.rbMTB6.TabIndex = 1;
+            this.rbMTB6.TabStop = true;
+            this.rbMTB6.Text = "MTB, гібрид, міський";
+            this.rbMTB6.UseVisualStyleBackColor = true;
+            this.rbMTB6.CheckedChanged += new System.EventHandler(this.rbMTB6_CheckedChanged);
             // 
-            // lblCalc1
+            // lblCalc6
             // 
-            this.lblCalc1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc1.Location = new System.Drawing.Point(214, 8);
-            this.lblCalc1.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCalc1.Name = "lblCalc1";
-            this.lblCalc1.Size = new System.Drawing.Size(82, 20);
-            this.lblCalc1.TabIndex = 0;
-            this.lblCalc1.Text = "Ваш зріст (см):";
+            this.lblCalc6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc6.Location = new System.Drawing.Point(215, 9);
+            this.lblCalc6.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCalc6.Name = "lblCalc6";
+            this.lblCalc6.Size = new System.Drawing.Size(82, 20);
+            this.lblCalc6.TabIndex = 0;
+            this.lblCalc6.Text = "Ваш зріст (см):";
             // 
-            // lblCalc1Height
+            // lblCalc6Height
             // 
-            this.lblCalc1Height.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc1Height.Location = new System.Drawing.Point(264, 74);
-            this.lblCalc1Height.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCalc1Height.Name = "lblCalc1Height";
-            this.lblCalc1Height.Size = new System.Drawing.Size(80, 24);
-            this.lblCalc1Height.TabIndex = 0;
-            this.lblCalc1Height.Text = "150 см";
-            this.lblCalc1Height.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc6Height.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc6Height.Location = new System.Drawing.Point(264, 74);
+            this.lblCalc6Height.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCalc6Height.Name = "lblCalc6Height";
+            this.lblCalc6Height.Size = new System.Drawing.Size(80, 24);
+            this.lblCalc6Height.TabIndex = 0;
+            this.lblCalc6Height.Text = "150 см";
+            this.lblCalc6Height.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlCalc1
+            // pnlCalc6
             // 
-            this.pnlCalc1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlCalc1.BackColor = System.Drawing.SystemColors.Control;
-            this.pnlCalc1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlCalc1.Controls.Add(this.lblCalc1gb);
-            this.pnlCalc1.Controls.Add(this.lblCalc1);
-            this.pnlCalc1.Controls.Add(this.pbCalc1);
-            this.pnlCalc1.Controls.Add(this.lblCalc1Note);
-            this.pnlCalc1.Controls.Add(this.lblCalc1Value);
-            this.pnlCalc1.Controls.Add(this.lblCalc1Height);
-            this.pnlCalc1.Controls.Add(this.gbBikeType1);
-            this.pnlCalc1.Controls.Add(this.tbCalc1);
-            this.hpMain.SetHelpKeyword(this.pnlCalc1, "calc_size.htm");
-            this.hpMain.SetHelpNavigator(this.pnlCalc1, System.Windows.Forms.HelpNavigator.Topic);
-            this.pnlCalc1.Location = new System.Drawing.Point(1, 24);
-            this.pnlCalc1.Name = "pnlCalc1";
-            this.hpMain.SetShowHelp(this.pnlCalc1, true);
-            this.pnlCalc1.Size = new System.Drawing.Size(700, 392);
-            this.pnlCalc1.TabIndex = 0;
+            this.pnlCalc6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlCalc6.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlCalc6.Controls.Add(this.lblCalc6gb);
+            this.pnlCalc6.Controls.Add(this.lblCalc6);
+            this.pnlCalc6.Controls.Add(this.pbCalc6);
+            this.pnlCalc6.Controls.Add(this.lblCalc6Note);
+            this.pnlCalc6.Controls.Add(this.lblCalc6Value);
+            this.pnlCalc6.Controls.Add(this.lblCalc6Height);
+            this.pnlCalc6.Controls.Add(this.gbBikeType1);
+            this.pnlCalc6.Controls.Add(this.tbCalc6);
+            this.pnlCalc6.Enabled = false;
+            this.hpMain.SetHelpKeyword(this.pnlCalc6, "calc_size.htm");
+            this.hpMain.SetHelpNavigator(this.pnlCalc6, System.Windows.Forms.HelpNavigator.Topic);
+            this.pnlCalc6.Location = new System.Drawing.Point(1, 24);
+            this.pnlCalc6.Name = "pnlCalc6";
+            this.hpMain.SetShowHelp(this.pnlCalc6, true);
+            this.pnlCalc6.Size = new System.Drawing.Size(700, 392);
+            this.pnlCalc6.TabIndex = 0;
+            this.pnlCalc6.Visible = false;
             // 
-            // lblCalc1gb
+            // lblCalc6gb
             // 
-            this.lblCalc1gb.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc1gb.Location = new System.Drawing.Point(14, 8);
-            this.lblCalc1gb.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCalc1gb.Name = "lblCalc1gb";
-            this.lblCalc1gb.Size = new System.Drawing.Size(92, 14);
-            this.lblCalc1gb.TabIndex = 7;
-            this.lblCalc1gb.Text = "Тип велосипеда:";
+            this.lblCalc6gb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc6gb.Location = new System.Drawing.Point(15, 9);
+            this.lblCalc6gb.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCalc6gb.Name = "lblCalc6gb";
+            this.lblCalc6gb.Size = new System.Drawing.Size(92, 14);
+            this.lblCalc6gb.TabIndex = 7;
+            this.lblCalc6gb.Text = "Тип велосипеда:";
             // 
-            // pbCalc1
+            // pbCalc6
             // 
-            this.pbCalc1.Image = global::myBike.Properties.Resources.mtb;
-            this.pbCalc1.Location = new System.Drawing.Point(386, 12);
-            this.pbCalc1.Margin = new System.Windows.Forms.Padding(0);
-            this.pbCalc1.Name = "pbCalc1";
-            this.pbCalc1.Size = new System.Drawing.Size(300, 210);
-            this.pbCalc1.TabIndex = 6;
-            this.pbCalc1.TabStop = false;
+            this.pbCalc6.Image = global::myBike.Properties.Resources.mtb;
+            this.pbCalc6.Location = new System.Drawing.Point(386, 12);
+            this.pbCalc6.Margin = new System.Windows.Forms.Padding(0);
+            this.pbCalc6.Name = "pbCalc6";
+            this.pbCalc6.Size = new System.Drawing.Size(300, 210);
+            this.pbCalc6.TabIndex = 6;
+            this.pbCalc6.TabStop = false;
             // 
-            // lblCalc1Note
+            // lblCalc6Note
             // 
-            this.lblCalc1Note.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc1Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc1Note.Location = new System.Drawing.Point(8, 310);
-            this.lblCalc1Note.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCalc1Note.Name = "lblCalc1Note";
-            this.lblCalc1Note.Size = new System.Drawing.Size(684, 60);
-            this.lblCalc1Note.TabIndex = 0;
-            this.lblCalc1Note.Text = resources.GetString("lblCalc1Note.Text");
-            this.lblCalc1Note.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCalc6Note.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc6Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc6Note.Location = new System.Drawing.Point(9, 311);
+            this.lblCalc6Note.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCalc6Note.Name = "lblCalc6Note";
+            this.lblCalc6Note.Size = new System.Drawing.Size(684, 60);
+            this.lblCalc6Note.TabIndex = 0;
+            this.lblCalc6Note.Text = resources.GetString("lblCalc6Note.Text");
+            this.lblCalc6Note.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblCalc1Value
+            // lblCalc6Value
             // 
-            this.lblCalc1Value.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblCalc6Value.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCalc1Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc1Value.Location = new System.Drawing.Point(10, 170);
-            this.lblCalc1Value.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCalc1Value.Name = "lblCalc1Value";
-            this.lblCalc1Value.Size = new System.Drawing.Size(362, 130);
-            this.lblCalc1Value.TabIndex = 0;
-            this.lblCalc1Value.Text = "Рекомендується розмір рами 13\"-14\" або 33-35 сантиметрів (XS).";
-            this.lblCalc1Value.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCalc6Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc6Value.Location = new System.Drawing.Point(10, 170);
+            this.lblCalc6Value.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCalc6Value.Name = "lblCalc6Value";
+            this.lblCalc6Value.Size = new System.Drawing.Size(364, 132);
+            this.lblCalc6Value.TabIndex = 0;
+            this.lblCalc6Value.Text = "Рекомендується розмір рами 13\"-14\" або 33-35 сантиметрів (XS).";
+            this.lblCalc6Value.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnlCalc2
             // 
@@ -442,7 +443,7 @@
             // lblCalc2L
             // 
             this.lblCalc2L.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc2L.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCalc2L.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCalc2L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblCalc2L.Location = new System.Drawing.Point(150, 95);
             this.lblCalc2L.Name = "lblCalc2L";
@@ -569,6 +570,7 @@
             // cbCalc2B
             // 
             this.cbCalc2B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc2B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc2B.FormattingEnabled = true;
             this.cbCalc2B.Location = new System.Drawing.Point(8, 196);
             this.cbCalc2B.Name = "cbCalc2B";
@@ -579,6 +581,7 @@
             // cbCalc2A
             // 
             this.cbCalc2A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc2A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc2A.FormattingEnabled = true;
             this.cbCalc2A.Location = new System.Drawing.Point(8, 146);
             this.cbCalc2A.Name = "cbCalc2A";
@@ -589,6 +592,7 @@
             // cbCalc2L
             // 
             this.cbCalc2L.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc2L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc2L.FormattingEnabled = true;
             this.cbCalc2L.Location = new System.Drawing.Point(8, 96);
             this.cbCalc2L.Name = "cbCalc2L";
@@ -610,6 +614,7 @@
             // 
             this.btnCalc3.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalc3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCalc3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalc3.Location = new System.Drawing.Point(201, 0);
             this.btnCalc3.Margin = new System.Windows.Forms.Padding(0);
@@ -648,19 +653,19 @@
             this.btnCalc5.UseVisualStyleBackColor = false;
             this.btnCalc5.Click += new System.EventHandler(this.btnCalc5_Click);
             // 
-            // btnCalc6
+            // btnCalc1
             // 
-            this.btnCalc6.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCalc6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCalc6.Location = new System.Drawing.Point(501, 0);
-            this.btnCalc6.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCalc6.Name = "btnCalc6";
-            this.btnCalc6.Size = new System.Drawing.Size(100, 24);
-            this.btnCalc6.TabIndex = 6;
-            this.btnCalc6.Text = "Подорож";
-            this.btnCalc6.UseVisualStyleBackColor = false;
-            this.btnCalc6.Click += new System.EventHandler(this.btnCalc6_Click);
+            this.btnCalc1.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCalc1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalc1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCalc1.Location = new System.Drawing.Point(1, 0);
+            this.btnCalc1.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCalc1.Name = "btnCalc1";
+            this.btnCalc1.Size = new System.Drawing.Size(100, 24);
+            this.btnCalc1.TabIndex = 1;
+            this.btnCalc1.Text = "Подорож";
+            this.btnCalc1.UseVisualStyleBackColor = false;
+            this.btnCalc1.Click += new System.EventHandler(this.btnCalc6_Click);
             // 
             // btnAbout
             // 
@@ -726,7 +731,7 @@
             // lblCalc3L
             // 
             this.lblCalc3L.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc3L.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCalc3L.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCalc3L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblCalc3L.Location = new System.Drawing.Point(150, 95);
             this.lblCalc3L.Name = "lblCalc3L";
@@ -854,6 +859,7 @@
             // cbCalc3B
             // 
             this.cbCalc3B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc3B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc3B.FormattingEnabled = true;
             this.cbCalc3B.Location = new System.Drawing.Point(8, 196);
             this.cbCalc3B.Name = "cbCalc3B";
@@ -864,6 +870,7 @@
             // cbCalc3A
             // 
             this.cbCalc3A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc3A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc3A.FormattingEnabled = true;
             this.cbCalc3A.Location = new System.Drawing.Point(8, 146);
             this.cbCalc3A.Name = "cbCalc3A";
@@ -874,6 +881,7 @@
             // cbCalc3L
             // 
             this.cbCalc3L.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc3L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc3L.FormattingEnabled = true;
             this.cbCalc3L.Location = new System.Drawing.Point(8, 96);
             this.cbCalc3L.Name = "cbCalc3L";
@@ -1095,6 +1103,7 @@
             // cbCalc4A
             // 
             this.cbCalc4A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc4A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc4A.FormattingEnabled = true;
             this.cbCalc4A.Location = new System.Drawing.Point(8, 146);
             this.cbCalc4A.Name = "cbCalc4A";
@@ -1105,6 +1114,7 @@
             // cbCalc4L
             // 
             this.cbCalc4L.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc4L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc4L.FormattingEnabled = true;
             this.cbCalc4L.Location = new System.Drawing.Point(8, 96);
             this.cbCalc4L.Name = "cbCalc4L";
@@ -1189,6 +1199,7 @@
             // cbCalc5L
             // 
             this.cbCalc5L.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc5L.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCalc5L.FormattingEnabled = true;
             this.cbCalc5L.Location = new System.Drawing.Point(8, 33);
             this.cbCalc5L.Name = "cbCalc5L";
@@ -1206,451 +1217,451 @@
             this.lblCalc5Note.TabIndex = 0;
             this.lblCalc5Note.Text = resources.GetString("lblCalc5Note.Text");
             // 
-            // pnlCalc6
+            // pnlCalc1
             // 
-            this.pnlCalc6.BackColor = System.Drawing.SystemColors.Control;
-            this.pnlCalc6.Controls.Add(this.lblWeightLoss);
-            this.pnlCalc6.Controls.Add(this.lblCalories);
-            this.pnlCalc6.Controls.Add(this.rbCalc6Note3);
-            this.pnlCalc6.Controls.Add(this.rbCalc6Note2);
-            this.pnlCalc6.Controls.Add(this.rbCalc6Note1);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TDistance);
-            this.pnlCalc6.Controls.Add(this.cbCalc6TireType);
-            this.pnlCalc6.Controls.Add(this.tbCalc6AirResistance);
-            this.pnlCalc6.Controls.Add(this.btnCalc6AirResistance);
-            this.pnlCalc6.Controls.Add(this.lblCalc6WindSpeed);
-            this.pnlCalc6.Controls.Add(this.lblCalc6Gradient);
-            this.pnlCalc6.Controls.Add(this.lblCalc6Efficiency);
-            this.pnlCalc6.Controls.Add(this.tbCalc6WindSpeed);
-            this.pnlCalc6.Controls.Add(this.tbCalc6Gradient);
-            this.pnlCalc6.Controls.Add(this.tbCalc6Efficiency);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TEfficiency);
-            this.pnlCalc6.Controls.Add(this.lblCalc6AirResistance);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TWindSpeed);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TGradient);
-            this.pnlCalc6.Controls.Add(this.lblCalc6WeightBike);
-            this.pnlCalc6.Controls.Add(this.tbCalc6WeightBike);
-            this.pnlCalc6.Controls.Add(this.lblCalc6WeightBiker);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TWeightBike);
-            this.pnlCalc6.Controls.Add(this.lblCalc6Distance);
-            this.pnlCalc6.Controls.Add(this.lblCalc6Speed);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TireType);
-            this.pnlCalc6.Controls.Add(this.tbCalc6WeightBiker);
-            this.pnlCalc6.Controls.Add(this.pbCalc6);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TripTime);
-            this.pnlCalc6.Controls.Add(this.lblCalc6Power);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TWeightBiker);
-            this.pnlCalc6.Controls.Add(this.lblCalc6TSpeed);
-            this.pnlCalc6.Controls.Add(this.tbCalc6Distance);
-            this.pnlCalc6.Controls.Add(this.lblCalc6Note);
-            this.pnlCalc6.Controls.Add(this.tbCalc6Speed);
-            this.pnlCalc6.Enabled = false;
-            this.hpMain.SetHelpKeyword(this.pnlCalc6, "calc_trip.htm");
-            this.hpMain.SetHelpNavigator(this.pnlCalc6, System.Windows.Forms.HelpNavigator.Topic);
-            this.pnlCalc6.Location = new System.Drawing.Point(1, 24);
-            this.pnlCalc6.Name = "pnlCalc6";
-            this.hpMain.SetShowHelp(this.pnlCalc6, true);
-            this.pnlCalc6.Size = new System.Drawing.Size(700, 392);
-            this.pnlCalc6.TabIndex = 13;
-            this.pnlCalc6.Visible = false;
+            this.pnlCalc1.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlCalc1.Controls.Add(this.lblCalc1WeightLoss);
+            this.pnlCalc1.Controls.Add(this.lblCalc1Calories);
+            this.pnlCalc1.Controls.Add(this.rbCalc1Note3);
+            this.pnlCalc1.Controls.Add(this.rbCalc1Note2);
+            this.pnlCalc1.Controls.Add(this.rbCalc1Note1);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TDistance);
+            this.pnlCalc1.Controls.Add(this.cbCalc1TireType);
+            this.pnlCalc1.Controls.Add(this.tbCalc1AirResistance);
+            this.pnlCalc1.Controls.Add(this.btnCalc1AirResistance);
+            this.pnlCalc1.Controls.Add(this.lblCalc1WindSpeed);
+            this.pnlCalc1.Controls.Add(this.lblCalc1Gradient);
+            this.pnlCalc1.Controls.Add(this.lblCalc1Efficiency);
+            this.pnlCalc1.Controls.Add(this.tbCalc1WindSpeed);
+            this.pnlCalc1.Controls.Add(this.tbCalc1Gradient);
+            this.pnlCalc1.Controls.Add(this.tbCalc1Efficiency);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TEfficiency);
+            this.pnlCalc1.Controls.Add(this.lblCalc1AirResistance);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TWindSpeed);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TGradient);
+            this.pnlCalc1.Controls.Add(this.lblCalc1WeightBike);
+            this.pnlCalc1.Controls.Add(this.tbCalc1WeightBike);
+            this.pnlCalc1.Controls.Add(this.lblCalc1WeightBiker);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TWeightBike);
+            this.pnlCalc1.Controls.Add(this.lblCalc1Distance);
+            this.pnlCalc1.Controls.Add(this.lblCalc1Speed);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TireType);
+            this.pnlCalc1.Controls.Add(this.tbCalc1WeightBiker);
+            this.pnlCalc1.Controls.Add(this.pbCalc1);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TripTime);
+            this.pnlCalc1.Controls.Add(this.lblCalc1Power);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TWeightBiker);
+            this.pnlCalc1.Controls.Add(this.lblCalc1TSpeed);
+            this.pnlCalc1.Controls.Add(this.tbCalc1Distance);
+            this.pnlCalc1.Controls.Add(this.lblCalc1Note);
+            this.pnlCalc1.Controls.Add(this.tbCalc1Speed);
+            this.hpMain.SetHelpKeyword(this.pnlCalc1, "calc_trip.htm");
+            this.hpMain.SetHelpNavigator(this.pnlCalc1, System.Windows.Forms.HelpNavigator.Topic);
+            this.pnlCalc1.Location = new System.Drawing.Point(1, 24);
+            this.pnlCalc1.Name = "pnlCalc1";
+            this.hpMain.SetShowHelp(this.pnlCalc1, true);
+            this.pnlCalc1.Size = new System.Drawing.Size(700, 392);
+            this.pnlCalc1.TabIndex = 13;
             // 
-            // lblWeightLoss
+            // lblCalc1WeightLoss
             // 
-            this.lblWeightLoss.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblCalc1WeightLoss.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblWeightLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblWeightLoss.Location = new System.Drawing.Point(220, 336);
-            this.lblWeightLoss.Name = "lblWeightLoss";
-            this.lblWeightLoss.Size = new System.Drawing.Size(466, 20);
-            this.lblWeightLoss.TabIndex = 15;
-            this.lblWeightLoss.Text = "* для тих, хто підтримує форму: можливість схуднути на 0,01 кг";
-            this.lblWeightLoss.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1WeightLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1WeightLoss.Location = new System.Drawing.Point(220, 336);
+            this.lblCalc1WeightLoss.Name = "lblCalc1WeightLoss";
+            this.lblCalc1WeightLoss.Size = new System.Drawing.Size(466, 20);
+            this.lblCalc1WeightLoss.TabIndex = 15;
+            this.lblCalc1WeightLoss.Text = "* для тих, хто підтримує форму: можливість схуднути на 0,01 кг";
+            this.lblCalc1WeightLoss.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalories
+            // lblCalc1Calories
             // 
-            this.lblCalories.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblCalc1Calories.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCalories.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalories.Location = new System.Drawing.Point(220, 316);
-            this.lblCalories.Name = "lblCalories";
-            this.lblCalories.Size = new System.Drawing.Size(466, 20);
-            this.lblCalories.TabIndex = 14;
-            this.lblCalories.Text = "Витрата калорій: 2000 ккал";
-            this.lblCalories.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1Calories.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1Calories.Location = new System.Drawing.Point(220, 316);
+            this.lblCalc1Calories.Name = "lblCalc1Calories";
+            this.lblCalc1Calories.Size = new System.Drawing.Size(466, 20);
+            this.lblCalc1Calories.TabIndex = 14;
+            this.lblCalc1Calories.Text = "Витрата калорій: 2000 ккал";
+            this.lblCalc1Calories.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // rbCalc6Note3
+            // rbCalc1Note3
             // 
-            this.rbCalc6Note3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbCalc6Note3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbCalc6Note3.Location = new System.Drawing.Point(475, 360);
-            this.rbCalc6Note3.Name = "rbCalc6Note3";
-            this.rbCalc6Note3.Size = new System.Drawing.Size(218, 19);
-            this.rbCalc6Note3.TabIndex = 12;
-            this.rbCalc6Note3.Text = "часу педалювання від потужності";
-            this.rbCalc6Note3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.rbCalc6Note3.UseVisualStyleBackColor = true;
-            this.rbCalc6Note3.CheckedChanged += new System.EventHandler(this.rbCalc6Note3_CheckedChanged);
+            this.rbCalc1Note3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbCalc1Note3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbCalc1Note3.Location = new System.Drawing.Point(475, 360);
+            this.rbCalc1Note3.Name = "rbCalc1Note3";
+            this.rbCalc1Note3.Size = new System.Drawing.Size(218, 19);
+            this.rbCalc1Note3.TabIndex = 12;
+            this.rbCalc1Note3.Text = "часу педалювання від потужності";
+            this.rbCalc1Note3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.rbCalc1Note3.UseVisualStyleBackColor = true;
+            this.rbCalc1Note3.CheckedChanged += new System.EventHandler(this.rbCalc1Note3_CheckedChanged);
             // 
-            // rbCalc6Note2
+            // rbCalc1Note2
             // 
-            this.rbCalc6Note2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbCalc6Note2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbCalc6Note2.Location = new System.Drawing.Point(300, 360);
-            this.rbCalc6Note2.Name = "rbCalc6Note2";
-            this.rbCalc6Note2.Size = new System.Drawing.Size(176, 19);
-            this.rbCalc6Note2.TabIndex = 11;
-            this.rbCalc6Note2.Text = "швидкості від потужності,";
-            this.rbCalc6Note2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.rbCalc6Note2.UseVisualStyleBackColor = true;
-            this.rbCalc6Note2.CheckedChanged += new System.EventHandler(this.rbCalc6Note2_CheckedChanged);
+            this.rbCalc1Note2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbCalc1Note2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbCalc1Note2.Location = new System.Drawing.Point(300, 360);
+            this.rbCalc1Note2.Name = "rbCalc1Note2";
+            this.rbCalc1Note2.Size = new System.Drawing.Size(176, 19);
+            this.rbCalc1Note2.TabIndex = 11;
+            this.rbCalc1Note2.Text = "швидкості від потужності,";
+            this.rbCalc1Note2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.rbCalc1Note2.UseVisualStyleBackColor = true;
+            this.rbCalc1Note2.CheckedChanged += new System.EventHandler(this.rbCalc1Note2_CheckedChanged);
             // 
-            // rbCalc6Note1
+            // rbCalc1Note1
             // 
-            this.rbCalc6Note1.Checked = true;
-            this.rbCalc6Note1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbCalc6Note1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rbCalc6Note1.Location = new System.Drawing.Point(143, 360);
-            this.rbCalc6Note1.Name = "rbCalc6Note1";
-            this.rbCalc6Note1.Size = new System.Drawing.Size(158, 19);
-            this.rbCalc6Note1.TabIndex = 10;
-            this.rbCalc6Note1.TabStop = true;
-            this.rbCalc6Note1.Text = "швидкості від посадки,";
-            this.rbCalc6Note1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.rbCalc6Note1.UseVisualStyleBackColor = true;
-            this.rbCalc6Note1.CheckedChanged += new System.EventHandler(this.rbCalc6Note1_CheckedChanged);
+            this.rbCalc1Note1.Checked = true;
+            this.rbCalc1Note1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbCalc1Note1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rbCalc1Note1.Location = new System.Drawing.Point(143, 360);
+            this.rbCalc1Note1.Name = "rbCalc1Note1";
+            this.rbCalc1Note1.Size = new System.Drawing.Size(158, 19);
+            this.rbCalc1Note1.TabIndex = 10;
+            this.rbCalc1Note1.TabStop = true;
+            this.rbCalc1Note1.Text = "швидкості від посадки,";
+            this.rbCalc1Note1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.rbCalc1Note1.UseVisualStyleBackColor = true;
+            this.rbCalc1Note1.CheckedChanged += new System.EventHandler(this.rbCalc1Note1_CheckedChanged);
             // 
-            // lblCalc6TDistance
+            // lblCalc1TDistance
             // 
-            this.lblCalc6TDistance.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TDistance.Location = new System.Drawing.Point(224, 108);
-            this.lblCalc6TDistance.Name = "lblCalc6TDistance";
-            this.lblCalc6TDistance.Size = new System.Drawing.Size(136, 20);
-            this.lblCalc6TDistance.TabIndex = 0;
-            this.lblCalc6TDistance.Text = "Пройдено відстань:";
+            this.lblCalc1TDistance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TDistance.Location = new System.Drawing.Point(224, 108);
+            this.lblCalc1TDistance.Name = "lblCalc1TDistance";
+            this.lblCalc1TDistance.Size = new System.Drawing.Size(136, 20);
+            this.lblCalc1TDistance.TabIndex = 0;
+            this.lblCalc1TDistance.Text = "Пройдено відстань:";
             // 
-            // cbCalc6TireType
+            // cbCalc1TireType
             // 
-            this.cbCalc6TireType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCalc6TireType.FormattingEnabled = true;
-            this.cbCalc6TireType.Location = new System.Drawing.Point(8, 127);
-            this.cbCalc6TireType.Name = "cbCalc6TireType";
-            this.cbCalc6TireType.Size = new System.Drawing.Size(194, 21);
-            this.cbCalc6TireType.TabIndex = 3;
-            this.cbCalc6TireType.SelectedIndexChanged += new System.EventHandler(this.cbCalc6TireType_SelectedIndexChanged);
+            this.cbCalc1TireType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalc1TireType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCalc1TireType.FormattingEnabled = true;
+            this.cbCalc1TireType.Location = new System.Drawing.Point(8, 127);
+            this.cbCalc1TireType.Name = "cbCalc1TireType";
+            this.cbCalc1TireType.Size = new System.Drawing.Size(194, 21);
+            this.cbCalc1TireType.TabIndex = 3;
+            this.cbCalc1TireType.SelectedIndexChanged += new System.EventHandler(this.cbCalc1TireType_SelectedIndexChanged);
             // 
-            // tbCalc6AirResistance
+            // tbCalc1AirResistance
             // 
-            this.tbCalc6AirResistance.BackColor = System.Drawing.SystemColors.Window;
-            this.tbCalc6AirResistance.Location = new System.Drawing.Point(8, 277);
-            this.tbCalc6AirResistance.Name = "tbCalc6AirResistance";
-            this.tbCalc6AirResistance.ReadOnly = true;
-            this.tbCalc6AirResistance.Size = new System.Drawing.Size(119, 20);
-            this.tbCalc6AirResistance.TabIndex = 6;
-            this.tbCalc6AirResistance.TabStop = false;
-            this.tbCalc6AirResistance.Text = "0,2641679";
+            this.tbCalc1AirResistance.BackColor = System.Drawing.SystemColors.Window;
+            this.tbCalc1AirResistance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbCalc1AirResistance.Location = new System.Drawing.Point(8, 277);
+            this.tbCalc1AirResistance.Name = "tbCalc1AirResistance";
+            this.tbCalc1AirResistance.ReadOnly = true;
+            this.tbCalc1AirResistance.Size = new System.Drawing.Size(119, 20);
+            this.tbCalc1AirResistance.TabIndex = 6;
+            this.tbCalc1AirResistance.TabStop = false;
+            this.tbCalc1AirResistance.Text = "0,2641679";
             // 
-            // btnCalc6AirResistance
+            // btnCalc1AirResistance
             // 
-            this.btnCalc6AirResistance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalc6AirResistance.Location = new System.Drawing.Point(132, 277);
-            this.btnCalc6AirResistance.Name = "btnCalc6AirResistance";
-            this.btnCalc6AirResistance.Size = new System.Drawing.Size(70, 21);
-            this.btnCalc6AirResistance.TabIndex = 6;
-            this.btnCalc6AirResistance.Text = "Обчислити";
-            this.btnCalc6AirResistance.UseVisualStyleBackColor = true;
-            this.btnCalc6AirResistance.Click += new System.EventHandler(this.btnCalc6AirResistance_Click);
+            this.btnCalc1AirResistance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalc1AirResistance.Location = new System.Drawing.Point(132, 277);
+            this.btnCalc1AirResistance.Name = "btnCalc1AirResistance";
+            this.btnCalc1AirResistance.Size = new System.Drawing.Size(70, 21);
+            this.btnCalc1AirResistance.TabIndex = 6;
+            this.btnCalc1AirResistance.Text = "Обчислити";
+            this.btnCalc1AirResistance.UseVisualStyleBackColor = true;
+            this.btnCalc1AirResistance.Click += new System.EventHandler(this.btnCalc1AirResistance_Click);
             // 
-            // lblCalc6WindSpeed
+            // lblCalc1WindSpeed
             // 
-            this.lblCalc6WindSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6WindSpeed.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCalc6WindSpeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCalc6WindSpeed.Location = new System.Drawing.Point(152, 227);
-            this.lblCalc6WindSpeed.Name = "lblCalc6WindSpeed";
-            this.lblCalc6WindSpeed.Size = new System.Drawing.Size(50, 20);
-            this.lblCalc6WindSpeed.TabIndex = 0;
-            this.lblCalc6WindSpeed.Text = "0 м/с";
-            this.lblCalc6WindSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1WindSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1WindSpeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCalc1WindSpeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCalc1WindSpeed.Location = new System.Drawing.Point(152, 227);
+            this.lblCalc1WindSpeed.Name = "lblCalc1WindSpeed";
+            this.lblCalc1WindSpeed.Size = new System.Drawing.Size(50, 20);
+            this.lblCalc1WindSpeed.TabIndex = 0;
+            this.lblCalc1WindSpeed.Text = "0 м/с";
+            this.lblCalc1WindSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalc6Gradient
+            // lblCalc1Gradient
             // 
-            this.lblCalc6Gradient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6Gradient.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCalc6Gradient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCalc6Gradient.Location = new System.Drawing.Point(152, 177);
-            this.lblCalc6Gradient.Name = "lblCalc6Gradient";
-            this.lblCalc6Gradient.Size = new System.Drawing.Size(50, 20);
-            this.lblCalc6Gradient.TabIndex = 0;
-            this.lblCalc6Gradient.Text = "0 %";
-            this.lblCalc6Gradient.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1Gradient.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1Gradient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCalc1Gradient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCalc1Gradient.Location = new System.Drawing.Point(152, 177);
+            this.lblCalc1Gradient.Name = "lblCalc1Gradient";
+            this.lblCalc1Gradient.Size = new System.Drawing.Size(50, 20);
+            this.lblCalc1Gradient.TabIndex = 0;
+            this.lblCalc1Gradient.Text = "0 %";
+            this.lblCalc1Gradient.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalc6Efficiency
+            // lblCalc1Efficiency
             // 
-            this.lblCalc6Efficiency.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6Efficiency.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCalc6Efficiency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCalc6Efficiency.Location = new System.Drawing.Point(152, 327);
-            this.lblCalc6Efficiency.Name = "lblCalc6Efficiency";
-            this.lblCalc6Efficiency.Size = new System.Drawing.Size(50, 20);
-            this.lblCalc6Efficiency.TabIndex = 0;
-            this.lblCalc6Efficiency.Text = "95 %";
-            this.lblCalc6Efficiency.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1Efficiency.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1Efficiency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCalc1Efficiency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCalc1Efficiency.Location = new System.Drawing.Point(152, 327);
+            this.lblCalc1Efficiency.Name = "lblCalc1Efficiency";
+            this.lblCalc1Efficiency.Size = new System.Drawing.Size(50, 20);
+            this.lblCalc1Efficiency.TabIndex = 0;
+            this.lblCalc1Efficiency.Text = "95 %";
+            this.lblCalc1Efficiency.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tbCalc6WindSpeed
+            // tbCalc1WindSpeed
             // 
-            this.tbCalc6WindSpeed.AutoSize = false;
-            this.tbCalc6WindSpeed.Location = new System.Drawing.Point(0, 224);
-            this.tbCalc6WindSpeed.Maximum = 25;
-            this.tbCalc6WindSpeed.Minimum = -25;
-            this.tbCalc6WindSpeed.Name = "tbCalc6WindSpeed";
-            this.tbCalc6WindSpeed.Size = new System.Drawing.Size(154, 30);
-            this.tbCalc6WindSpeed.TabIndex = 5;
-            this.tbCalc6WindSpeed.TickFrequency = 5;
-            this.tbCalc6WindSpeed.Scroll += new System.EventHandler(this.tbCalc6WindSpeed_Scroll);
+            this.tbCalc1WindSpeed.AutoSize = false;
+            this.tbCalc1WindSpeed.Location = new System.Drawing.Point(0, 224);
+            this.tbCalc1WindSpeed.Maximum = 25;
+            this.tbCalc1WindSpeed.Minimum = -25;
+            this.tbCalc1WindSpeed.Name = "tbCalc1WindSpeed";
+            this.tbCalc1WindSpeed.Size = new System.Drawing.Size(154, 30);
+            this.tbCalc1WindSpeed.TabIndex = 5;
+            this.tbCalc1WindSpeed.TickFrequency = 5;
+            this.tbCalc1WindSpeed.Scroll += new System.EventHandler(this.tbCalc1WindSpeed_Scroll);
             // 
-            // tbCalc6Gradient
+            // tbCalc1Gradient
             // 
-            this.tbCalc6Gradient.AutoSize = false;
-            this.tbCalc6Gradient.Location = new System.Drawing.Point(0, 174);
-            this.tbCalc6Gradient.Maximum = 200;
-            this.tbCalc6Gradient.Name = "tbCalc6Gradient";
-            this.tbCalc6Gradient.Size = new System.Drawing.Size(154, 30);
-            this.tbCalc6Gradient.TabIndex = 4;
-            this.tbCalc6Gradient.TickFrequency = 10;
-            this.tbCalc6Gradient.Scroll += new System.EventHandler(this.tbCalc6Gradient_Scroll);
+            this.tbCalc1Gradient.AutoSize = false;
+            this.tbCalc1Gradient.Location = new System.Drawing.Point(0, 174);
+            this.tbCalc1Gradient.Maximum = 200;
+            this.tbCalc1Gradient.Name = "tbCalc1Gradient";
+            this.tbCalc1Gradient.Size = new System.Drawing.Size(154, 30);
+            this.tbCalc1Gradient.TabIndex = 4;
+            this.tbCalc1Gradient.TickFrequency = 10;
+            this.tbCalc1Gradient.Scroll += new System.EventHandler(this.tbCalc1Gradient_Scroll);
             // 
-            // tbCalc6Efficiency
+            // tbCalc1Efficiency
             // 
-            this.tbCalc6Efficiency.AutoSize = false;
-            this.tbCalc6Efficiency.Location = new System.Drawing.Point(0, 324);
-            this.tbCalc6Efficiency.Maximum = 99;
-            this.tbCalc6Efficiency.Minimum = 70;
-            this.tbCalc6Efficiency.Name = "tbCalc6Efficiency";
-            this.tbCalc6Efficiency.Size = new System.Drawing.Size(154, 30);
-            this.tbCalc6Efficiency.TabIndex = 7;
-            this.tbCalc6Efficiency.Value = 95;
-            this.tbCalc6Efficiency.Scroll += new System.EventHandler(this.tbCalc6Efficiency_Scroll);
+            this.tbCalc1Efficiency.AutoSize = false;
+            this.tbCalc1Efficiency.Location = new System.Drawing.Point(0, 324);
+            this.tbCalc1Efficiency.Maximum = 99;
+            this.tbCalc1Efficiency.Minimum = 70;
+            this.tbCalc1Efficiency.Name = "tbCalc1Efficiency";
+            this.tbCalc1Efficiency.Size = new System.Drawing.Size(154, 30);
+            this.tbCalc1Efficiency.TabIndex = 7;
+            this.tbCalc1Efficiency.Value = 95;
+            this.tbCalc1Efficiency.Scroll += new System.EventHandler(this.tbCalc1Efficiency_Scroll);
             // 
-            // lblCalc6TEfficiency
+            // lblCalc1TEfficiency
             // 
-            this.lblCalc6TEfficiency.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TEfficiency.Location = new System.Drawing.Point(6, 308);
-            this.lblCalc6TEfficiency.Name = "lblCalc6TEfficiency";
-            this.lblCalc6TEfficiency.Size = new System.Drawing.Size(194, 14);
-            this.lblCalc6TEfficiency.TabIndex = 0;
-            this.lblCalc6TEfficiency.Text = "КПД трансмісії:";
+            this.lblCalc1TEfficiency.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TEfficiency.Location = new System.Drawing.Point(6, 308);
+            this.lblCalc1TEfficiency.Name = "lblCalc1TEfficiency";
+            this.lblCalc1TEfficiency.Size = new System.Drawing.Size(194, 14);
+            this.lblCalc1TEfficiency.TabIndex = 0;
+            this.lblCalc1TEfficiency.Text = "КПД трансмісії:";
             // 
-            // lblCalc6AirResistance
+            // lblCalc1AirResistance
             // 
-            this.lblCalc6AirResistance.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6AirResistance.Location = new System.Drawing.Point(6, 258);
-            this.lblCalc6AirResistance.Name = "lblCalc6AirResistance";
-            this.lblCalc6AirResistance.Size = new System.Drawing.Size(194, 14);
-            this.lblCalc6AirResistance.TabIndex = 0;
-            this.lblCalc6AirResistance.Text = "Коефіцієнт опору повітря:";
+            this.lblCalc1AirResistance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1AirResistance.Location = new System.Drawing.Point(6, 258);
+            this.lblCalc1AirResistance.Name = "lblCalc1AirResistance";
+            this.lblCalc1AirResistance.Size = new System.Drawing.Size(194, 14);
+            this.lblCalc1AirResistance.TabIndex = 0;
+            this.lblCalc1AirResistance.Text = "Коефіцієнт опору повітря:";
             // 
-            // lblCalc6TWindSpeed
+            // lblCalc1TWindSpeed
             // 
-            this.lblCalc6TWindSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TWindSpeed.Location = new System.Drawing.Point(6, 208);
-            this.lblCalc6TWindSpeed.Name = "lblCalc6TWindSpeed";
-            this.lblCalc6TWindSpeed.Size = new System.Drawing.Size(194, 14);
-            this.lblCalc6TWindSpeed.TabIndex = 0;
-            this.lblCalc6TWindSpeed.Text = "Вітер (\"-\" попутний; \"+\" зустрічний):";
+            this.lblCalc1TWindSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TWindSpeed.Location = new System.Drawing.Point(6, 208);
+            this.lblCalc1TWindSpeed.Name = "lblCalc1TWindSpeed";
+            this.lblCalc1TWindSpeed.Size = new System.Drawing.Size(194, 14);
+            this.lblCalc1TWindSpeed.TabIndex = 0;
+            this.lblCalc1TWindSpeed.Text = "Вітер (\"-\" попутний; \"+\" зустрічний):";
             // 
-            // lblCalc6TGradient
+            // lblCalc1TGradient
             // 
-            this.lblCalc6TGradient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TGradient.Location = new System.Drawing.Point(6, 158);
-            this.lblCalc6TGradient.Name = "lblCalc6TGradient";
-            this.lblCalc6TGradient.Size = new System.Drawing.Size(194, 14);
-            this.lblCalc6TGradient.TabIndex = 0;
-            this.lblCalc6TGradient.Text = "Градіент (нахил) %:";
+            this.lblCalc1TGradient.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TGradient.Location = new System.Drawing.Point(6, 158);
+            this.lblCalc1TGradient.Name = "lblCalc1TGradient";
+            this.lblCalc1TGradient.Size = new System.Drawing.Size(194, 14);
+            this.lblCalc1TGradient.TabIndex = 0;
+            this.lblCalc1TGradient.Text = "Градіент (нахил) %:";
             // 
-            // lblCalc6WeightBike
+            // lblCalc1WeightBike
             // 
-            this.lblCalc6WeightBike.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6WeightBike.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCalc6WeightBike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCalc6WeightBike.Location = new System.Drawing.Point(152, 77);
-            this.lblCalc6WeightBike.Name = "lblCalc6WeightBike";
-            this.lblCalc6WeightBike.Size = new System.Drawing.Size(50, 20);
-            this.lblCalc6WeightBike.TabIndex = 0;
-            this.lblCalc6WeightBike.Text = "25 кг";
-            this.lblCalc6WeightBike.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1WeightBike.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1WeightBike.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCalc1WeightBike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCalc1WeightBike.Location = new System.Drawing.Point(152, 77);
+            this.lblCalc1WeightBike.Name = "lblCalc1WeightBike";
+            this.lblCalc1WeightBike.Size = new System.Drawing.Size(50, 20);
+            this.lblCalc1WeightBike.TabIndex = 0;
+            this.lblCalc1WeightBike.Text = "25 кг";
+            this.lblCalc1WeightBike.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tbCalc6WeightBike
+            // tbCalc1WeightBike
             // 
-            this.tbCalc6WeightBike.AutoSize = false;
-            this.tbCalc6WeightBike.Location = new System.Drawing.Point(0, 74);
-            this.tbCalc6WeightBike.Maximum = 70;
-            this.tbCalc6WeightBike.Minimum = 5;
-            this.tbCalc6WeightBike.Name = "tbCalc6WeightBike";
-            this.tbCalc6WeightBike.Size = new System.Drawing.Size(154, 30);
-            this.tbCalc6WeightBike.TabIndex = 2;
-            this.tbCalc6WeightBike.TickFrequency = 5;
-            this.tbCalc6WeightBike.Value = 25;
-            this.tbCalc6WeightBike.Scroll += new System.EventHandler(this.tbCalc6WeightBike_Scroll);
+            this.tbCalc1WeightBike.AutoSize = false;
+            this.tbCalc1WeightBike.Location = new System.Drawing.Point(0, 74);
+            this.tbCalc1WeightBike.Maximum = 70;
+            this.tbCalc1WeightBike.Minimum = 5;
+            this.tbCalc1WeightBike.Name = "tbCalc1WeightBike";
+            this.tbCalc1WeightBike.Size = new System.Drawing.Size(154, 30);
+            this.tbCalc1WeightBike.TabIndex = 2;
+            this.tbCalc1WeightBike.TickFrequency = 5;
+            this.tbCalc1WeightBike.Value = 25;
+            this.tbCalc1WeightBike.Scroll += new System.EventHandler(this.tbCalc1WeightBike_Scroll);
             // 
-            // lblCalc6WeightBiker
+            // lblCalc1WeightBiker
             // 
-            this.lblCalc6WeightBiker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6WeightBiker.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCalc6WeightBiker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCalc6WeightBiker.Location = new System.Drawing.Point(152, 27);
-            this.lblCalc6WeightBiker.Name = "lblCalc6WeightBiker";
-            this.lblCalc6WeightBiker.Size = new System.Drawing.Size(50, 20);
-            this.lblCalc6WeightBiker.TabIndex = 0;
-            this.lblCalc6WeightBiker.Text = "80 кг";
-            this.lblCalc6WeightBiker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1WeightBiker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1WeightBiker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCalc1WeightBiker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCalc1WeightBiker.Location = new System.Drawing.Point(152, 27);
+            this.lblCalc1WeightBiker.Name = "lblCalc1WeightBiker";
+            this.lblCalc1WeightBiker.Size = new System.Drawing.Size(50, 20);
+            this.lblCalc1WeightBiker.TabIndex = 0;
+            this.lblCalc1WeightBiker.Text = "80 кг";
+            this.lblCalc1WeightBiker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalc6TWeightBike
+            // lblCalc1TWeightBike
             // 
-            this.lblCalc6TWeightBike.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TWeightBike.Location = new System.Drawing.Point(6, 58);
-            this.lblCalc6TWeightBike.Name = "lblCalc6TWeightBike";
-            this.lblCalc6TWeightBike.Size = new System.Drawing.Size(194, 14);
-            this.lblCalc6TWeightBike.TabIndex = 0;
-            this.lblCalc6TWeightBike.Text = "Маса велосипеда та спорядження:";
+            this.lblCalc1TWeightBike.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TWeightBike.Location = new System.Drawing.Point(6, 58);
+            this.lblCalc1TWeightBike.Name = "lblCalc1TWeightBike";
+            this.lblCalc1TWeightBike.Size = new System.Drawing.Size(194, 14);
+            this.lblCalc1TWeightBike.TabIndex = 0;
+            this.lblCalc1TWeightBike.Text = "Маса велосипеда та спорядження:";
             // 
-            // lblCalc6Distance
+            // lblCalc1Distance
             // 
-            this.lblCalc6Distance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc6Distance.Location = new System.Drawing.Point(264, 152);
-            this.lblCalc6Distance.Name = "lblCalc6Distance";
-            this.lblCalc6Distance.Size = new System.Drawing.Size(110, 24);
-            this.lblCalc6Distance.TabIndex = 0;
-            this.lblCalc6Distance.Text = "100 км";
-            this.lblCalc6Distance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1Distance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1Distance.Location = new System.Drawing.Point(264, 152);
+            this.lblCalc1Distance.Name = "lblCalc1Distance";
+            this.lblCalc1Distance.Size = new System.Drawing.Size(110, 24);
+            this.lblCalc1Distance.TabIndex = 0;
+            this.lblCalc1Distance.Text = "100 км";
+            this.lblCalc1Distance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalc6Speed
+            // lblCalc1Speed
             // 
-            this.lblCalc6Speed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc6Speed.Location = new System.Drawing.Point(264, 52);
-            this.lblCalc6Speed.Name = "lblCalc6Speed";
-            this.lblCalc6Speed.Size = new System.Drawing.Size(110, 24);
-            this.lblCalc6Speed.TabIndex = 0;
-            this.lblCalc6Speed.Text = "20 км/год";
-            this.lblCalc6Speed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1Speed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1Speed.Location = new System.Drawing.Point(264, 52);
+            this.lblCalc1Speed.Name = "lblCalc1Speed";
+            this.lblCalc1Speed.Size = new System.Drawing.Size(110, 24);
+            this.lblCalc1Speed.TabIndex = 0;
+            this.lblCalc1Speed.Text = "20 км/год";
+            this.lblCalc1Speed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalc6TireType
+            // lblCalc1TireType
             // 
-            this.lblCalc6TireType.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TireType.Location = new System.Drawing.Point(6, 108);
-            this.lblCalc6TireType.Name = "lblCalc6TireType";
-            this.lblCalc6TireType.Size = new System.Drawing.Size(194, 14);
-            this.lblCalc6TireType.TabIndex = 0;
-            this.lblCalc6TireType.Text = "Тип шини:";
+            this.lblCalc1TireType.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TireType.Location = new System.Drawing.Point(6, 108);
+            this.lblCalc1TireType.Name = "lblCalc1TireType";
+            this.lblCalc1TireType.Size = new System.Drawing.Size(194, 14);
+            this.lblCalc1TireType.TabIndex = 0;
+            this.lblCalc1TireType.Text = "Тип шини:";
             // 
-            // tbCalc6WeightBiker
+            // tbCalc1WeightBiker
             // 
-            this.tbCalc6WeightBiker.AutoSize = false;
-            this.tbCalc6WeightBiker.Location = new System.Drawing.Point(0, 24);
-            this.tbCalc6WeightBiker.Maximum = 140;
-            this.tbCalc6WeightBiker.Minimum = 20;
-            this.tbCalc6WeightBiker.Name = "tbCalc6WeightBiker";
-            this.tbCalc6WeightBiker.Size = new System.Drawing.Size(154, 30);
-            this.tbCalc6WeightBiker.TabIndex = 1;
-            this.tbCalc6WeightBiker.TickFrequency = 10;
-            this.tbCalc6WeightBiker.Value = 80;
-            this.tbCalc6WeightBiker.Scroll += new System.EventHandler(this.tbCalc6WeightBiker_Scroll);
+            this.tbCalc1WeightBiker.AutoSize = false;
+            this.tbCalc1WeightBiker.Location = new System.Drawing.Point(0, 24);
+            this.tbCalc1WeightBiker.Maximum = 140;
+            this.tbCalc1WeightBiker.Minimum = 20;
+            this.tbCalc1WeightBiker.Name = "tbCalc1WeightBiker";
+            this.tbCalc1WeightBiker.Size = new System.Drawing.Size(154, 30);
+            this.tbCalc1WeightBiker.TabIndex = 1;
+            this.tbCalc1WeightBiker.TickFrequency = 10;
+            this.tbCalc1WeightBiker.Value = 80;
+            this.tbCalc1WeightBiker.Scroll += new System.EventHandler(this.tbCalc1WeightBiker_Scroll);
             // 
-            // pbCalc6
+            // pbCalc1
             // 
-            this.pbCalc6.Image = global::myBike.Properties.Resources.aerobar;
-            this.pbCalc6.Location = new System.Drawing.Point(386, 12);
-            this.pbCalc6.Name = "pbCalc6";
-            this.pbCalc6.Size = new System.Drawing.Size(300, 210);
-            this.pbCalc6.TabIndex = 13;
-            this.pbCalc6.TabStop = false;
+            this.pbCalc1.Image = global::myBike.Properties.Resources.aerobar;
+            this.pbCalc1.Location = new System.Drawing.Point(386, 12);
+            this.pbCalc1.Name = "pbCalc1";
+            this.pbCalc1.Size = new System.Drawing.Size(300, 210);
+            this.pbCalc1.TabIndex = 13;
+            this.pbCalc1.TabStop = false;
             // 
-            // lblCalc6TripTime
+            // lblCalc1TripTime
             // 
-            this.lblCalc6TripTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblCalc1TripTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCalc6TripTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc6TripTime.Location = new System.Drawing.Point(220, 268);
-            this.lblCalc6TripTime.Name = "lblCalc6TripTime";
-            this.lblCalc6TripTime.Size = new System.Drawing.Size(466, 48);
-            this.lblCalc6TripTime.TabIndex = 0;
-            this.lblCalc6TripTime.Text = "Час \"в сідлі\": 5 год 20 хв Відпочинок: 1 год 10 хв\r\nЧас подорожі: 6 год 30 хв";
-            this.lblCalc6TripTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1TripTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1TripTime.Location = new System.Drawing.Point(220, 268);
+            this.lblCalc1TripTime.Name = "lblCalc1TripTime";
+            this.lblCalc1TripTime.Size = new System.Drawing.Size(466, 48);
+            this.lblCalc1TripTime.TabIndex = 0;
+            this.lblCalc1TripTime.Text = "Час \"в сідлі\": 5 год 20 хв Відпочинок: 1 год 10 хв\r\nЧас подорожі: 6 год 30 хв";
+            this.lblCalc1TripTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalc6Power
+            // lblCalc1Power
             // 
-            this.lblCalc6Power.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblCalc1Power.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCalc6Power.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc6Power.Location = new System.Drawing.Point(220, 226);
-            this.lblCalc6Power.Name = "lblCalc6Power";
-            this.lblCalc6Power.Size = new System.Drawing.Size(466, 48);
-            this.lblCalc6Power.TabIndex = 0;
-            this.lblCalc6Power.Text = "Необхідна потужність: 100 Вт";
-            this.lblCalc6Power.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCalc1Power.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1Power.Location = new System.Drawing.Point(220, 226);
+            this.lblCalc1Power.Name = "lblCalc1Power";
+            this.lblCalc1Power.Size = new System.Drawing.Size(466, 48);
+            this.lblCalc1Power.TabIndex = 0;
+            this.lblCalc1Power.Text = "Необхідна потужність: 100 Вт";
+            this.lblCalc1Power.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalc6TWeightBiker
+            // lblCalc1TWeightBiker
             // 
-            this.lblCalc6TWeightBiker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TWeightBiker.Location = new System.Drawing.Point(6, 8);
-            this.lblCalc6TWeightBiker.Name = "lblCalc6TWeightBiker";
-            this.lblCalc6TWeightBiker.Size = new System.Drawing.Size(194, 14);
-            this.lblCalc6TWeightBiker.TabIndex = 0;
-            this.lblCalc6TWeightBiker.Text = "Маса велосипедиста:";
+            this.lblCalc1TWeightBiker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TWeightBiker.Location = new System.Drawing.Point(6, 8);
+            this.lblCalc1TWeightBiker.Name = "lblCalc1TWeightBiker";
+            this.lblCalc1TWeightBiker.Size = new System.Drawing.Size(194, 14);
+            this.lblCalc1TWeightBiker.TabIndex = 0;
+            this.lblCalc1TWeightBiker.Text = "Маса велосипедиста:";
             // 
-            // lblCalc6TSpeed
+            // lblCalc1TSpeed
             // 
-            this.lblCalc6TSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6TSpeed.Location = new System.Drawing.Point(224, 8);
-            this.lblCalc6TSpeed.Name = "lblCalc6TSpeed";
-            this.lblCalc6TSpeed.Size = new System.Drawing.Size(136, 20);
-            this.lblCalc6TSpeed.TabIndex = 0;
-            this.lblCalc6TSpeed.Text = "Швидкість велосипеда:";
+            this.lblCalc1TSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1TSpeed.Location = new System.Drawing.Point(224, 8);
+            this.lblCalc1TSpeed.Name = "lblCalc1TSpeed";
+            this.lblCalc1TSpeed.Size = new System.Drawing.Size(136, 20);
+            this.lblCalc1TSpeed.TabIndex = 0;
+            this.lblCalc1TSpeed.Text = "Швидкість велосипеда:";
             // 
-            // tbCalc6Distance
+            // tbCalc1Distance
             // 
-            this.tbCalc6Distance.AutoSize = false;
-            this.tbCalc6Distance.BackColor = System.Drawing.SystemColors.Control;
-            this.tbCalc6Distance.Location = new System.Drawing.Point(220, 124);
-            this.tbCalc6Distance.Maximum = 500;
-            this.tbCalc6Distance.Minimum = 1;
-            this.tbCalc6Distance.Name = "tbCalc6Distance";
-            this.tbCalc6Distance.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.tbCalc6Distance.Size = new System.Drawing.Size(42, 90);
-            this.tbCalc6Distance.TabIndex = 9;
-            this.tbCalc6Distance.TickFrequency = 100;
-            this.tbCalc6Distance.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.tbCalc6Distance.Value = 100;
-            this.tbCalc6Distance.Scroll += new System.EventHandler(this.tbCalc6Distance_Scroll);
+            this.tbCalc1Distance.AutoSize = false;
+            this.tbCalc1Distance.BackColor = System.Drawing.SystemColors.Control;
+            this.tbCalc1Distance.Location = new System.Drawing.Point(220, 124);
+            this.tbCalc1Distance.Maximum = 500;
+            this.tbCalc1Distance.Minimum = 1;
+            this.tbCalc1Distance.Name = "tbCalc1Distance";
+            this.tbCalc1Distance.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.tbCalc1Distance.Size = new System.Drawing.Size(42, 90);
+            this.tbCalc1Distance.TabIndex = 9;
+            this.tbCalc1Distance.TickFrequency = 100;
+            this.tbCalc1Distance.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.tbCalc1Distance.Value = 100;
+            this.tbCalc1Distance.Scroll += new System.EventHandler(this.tbCalc1Distance_Scroll);
             // 
-            // lblCalc6Note
+            // lblCalc1Note
             // 
-            this.lblCalc6Note.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCalc6Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCalc6Note.Location = new System.Drawing.Point(6, 362);
-            this.lblCalc6Note.Name = "lblCalc6Note";
-            this.lblCalc6Note.Size = new System.Drawing.Size(134, 19);
-            this.lblCalc6Note.TabIndex = 0;
-            this.lblCalc6Note.Text = "Примітка: залежність";
+            this.lblCalc1Note.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCalc1Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCalc1Note.Location = new System.Drawing.Point(6, 362);
+            this.lblCalc1Note.Name = "lblCalc1Note";
+            this.lblCalc1Note.Size = new System.Drawing.Size(134, 19);
+            this.lblCalc1Note.TabIndex = 0;
+            this.lblCalc1Note.Text = "Примітка: залежність";
             // 
-            // tbCalc6Speed
+            // tbCalc1Speed
             // 
-            this.tbCalc6Speed.AutoSize = false;
-            this.tbCalc6Speed.BackColor = System.Drawing.SystemColors.Control;
-            this.tbCalc6Speed.Location = new System.Drawing.Point(220, 20);
-            this.tbCalc6Speed.Maximum = 60;
-            this.tbCalc6Speed.Minimum = 5;
-            this.tbCalc6Speed.Name = "tbCalc6Speed";
-            this.tbCalc6Speed.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.tbCalc6Speed.Size = new System.Drawing.Size(42, 90);
-            this.tbCalc6Speed.TabIndex = 8;
-            this.tbCalc6Speed.TickFrequency = 5;
-            this.tbCalc6Speed.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.tbCalc6Speed.Value = 20;
-            this.tbCalc6Speed.Scroll += new System.EventHandler(this.tbCalc6Speed_Scroll);
+            this.tbCalc1Speed.AutoSize = false;
+            this.tbCalc1Speed.BackColor = System.Drawing.SystemColors.Control;
+            this.tbCalc1Speed.Location = new System.Drawing.Point(220, 20);
+            this.tbCalc1Speed.Maximum = 60;
+            this.tbCalc1Speed.Minimum = 5;
+            this.tbCalc1Speed.Name = "tbCalc1Speed";
+            this.tbCalc1Speed.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.tbCalc1Speed.Size = new System.Drawing.Size(42, 90);
+            this.tbCalc1Speed.TabIndex = 8;
+            this.tbCalc1Speed.TickFrequency = 5;
+            this.tbCalc1Speed.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.tbCalc1Speed.Value = 20;
+            this.tbCalc1Speed.Scroll += new System.EventHandler(this.tbCalc1Speed_Scroll);
             // 
             // hpMain
             // 
@@ -1662,19 +1673,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(702, 417);
-            this.Controls.Add(this.btnAbout);
-            this.Controls.Add(this.btnCalc6);
-            this.Controls.Add(this.btnCalc5);
-            this.Controls.Add(this.btnCalc4);
-            this.Controls.Add(this.btnCalc3);
-            this.Controls.Add(this.btnCalc2);
-            this.Controls.Add(this.btnCalc1);
+            this.Controls.Add(this.pnlCalc1);
             this.Controls.Add(this.pnlCalc2);
             this.Controls.Add(this.pnlCalc3);
             this.Controls.Add(this.pnlCalc4);
             this.Controls.Add(this.pnlCalc5);
+            this.Controls.Add(this.btnAbout);
+            this.Controls.Add(this.btnCalc1);
+            this.Controls.Add(this.btnCalc5);
+            this.Controls.Add(this.btnCalc4);
+            this.Controls.Add(this.btnCalc3);
+            this.Controls.Add(this.btnCalc2);
+            this.Controls.Add(this.btnCalc6);
             this.Controls.Add(this.pnlCalc6);
-            this.Controls.Add(this.pnlCalc1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1683,11 +1694,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Велосипедний калькулятор - ростовка";
             this.Load += new System.EventHandler(this.FmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6)).EndInit();
             this.gbBikeType1.ResumeLayout(false);
             this.gbBikeType1.PerformLayout();
-            this.pnlCalc1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalc1)).EndInit();
+            this.pnlCalc6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalc6)).EndInit();
             this.pnlCalc2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tbCalc2L)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCalc2)).EndInit();
@@ -1709,36 +1720,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbCalc4Speed)).EndInit();
             this.pnlCalc5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbCalc5)).EndInit();
-            this.pnlCalc6.ResumeLayout(false);
-            this.pnlCalc6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6WindSpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Gradient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Efficiency)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6WeightBike)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6WeightBiker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalc6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Distance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbCalc6Speed)).EndInit();
+            this.pnlCalc1.ResumeLayout(false);
+            this.pnlCalc1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1WindSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Gradient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Efficiency)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1WeightBike)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1WeightBiker)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Distance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCalc1Speed)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnCalc1;
+        private System.Windows.Forms.Button btnCalc6;
         private System.Windows.Forms.Button btnCalc2;
-        private System.Windows.Forms.TrackBar tbCalc1;
+        private System.Windows.Forms.TrackBar tbCalc6;
         private System.Windows.Forms.GroupBox gbBikeType1;
-        private System.Windows.Forms.RadioButton rbTouring1;
-        private System.Windows.Forms.RadioButton rbChild1;
-        private System.Windows.Forms.RadioButton rbBMX1;
-        private System.Windows.Forms.RadioButton rbRoad1;
-        private System.Windows.Forms.RadioButton rbMTB1;
-        private System.Windows.Forms.Label lblCalc1;
-        private System.Windows.Forms.Label lblCalc1Height;
-        private System.Windows.Forms.Panel pnlCalc1;
-        private System.Windows.Forms.Label lblCalc1Note;
-        private System.Windows.Forms.Label lblCalc1Value;
-        private System.Windows.Forms.PictureBox pbCalc1;
+        private System.Windows.Forms.RadioButton rbTouring6;
+        private System.Windows.Forms.RadioButton rbChild6;
+        private System.Windows.Forms.RadioButton rbBMX6;
+        private System.Windows.Forms.RadioButton rbRoad6;
+        private System.Windows.Forms.RadioButton rbMTB6;
+        private System.Windows.Forms.Label lblCalc6;
+        private System.Windows.Forms.Label lblCalc6Height;
+        private System.Windows.Forms.Panel pnlCalc6;
+        private System.Windows.Forms.Label lblCalc6Note;
+        private System.Windows.Forms.Label lblCalc6Value;
+        private System.Windows.Forms.PictureBox pbCalc6;
         private System.Windows.Forms.Panel pnlCalc2;
         private System.Windows.Forms.PictureBox pbCalc2;
         private System.Windows.Forms.Label lblCalc2Value;
@@ -1759,7 +1770,7 @@
         private System.Windows.Forms.Button btnCalc3;
         private System.Windows.Forms.Button btnCalc4;
         private System.Windows.Forms.Button btnCalc5;
-        private System.Windows.Forms.Button btnCalc6;
+        private System.Windows.Forms.Button btnCalc1;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Panel pnlCalc3;
         private System.Windows.Forms.Label lblCalc3Cadence;
@@ -1799,47 +1810,47 @@
         private System.Windows.Forms.Label lblCalc5Value;
         private System.Windows.Forms.ComboBox cbCalc5L;
         private System.Windows.Forms.Label lblCalc5Note;
-        private System.Windows.Forms.Panel pnlCalc6;
-        private System.Windows.Forms.Label lblCalc6Speed;
-        private System.Windows.Forms.Label lblCalc6WeightBiker;
-        private System.Windows.Forms.Label lblCalc6TireType;
-        private System.Windows.Forms.TrackBar tbCalc6WeightBiker;
-        private System.Windows.Forms.PictureBox pbCalc6;
-        private System.Windows.Forms.Label lblCalc6Power;
-        private System.Windows.Forms.Label lblCalc6TWeightBiker;
-        private System.Windows.Forms.Label lblCalc6TSpeed;
-        private System.Windows.Forms.TrackBar tbCalc6Speed;
-        private System.Windows.Forms.ComboBox cbCalc6TireType;
-        private System.Windows.Forms.Label lblCalc6Note;
+        private System.Windows.Forms.Panel pnlCalc1;
+        private System.Windows.Forms.Label lblCalc1Speed;
+        private System.Windows.Forms.Label lblCalc1WeightBiker;
+        private System.Windows.Forms.Label lblCalc1TireType;
+        private System.Windows.Forms.TrackBar tbCalc1WeightBiker;
+        private System.Windows.Forms.PictureBox pbCalc1;
+        private System.Windows.Forms.Label lblCalc1Power;
+        private System.Windows.Forms.Label lblCalc1TWeightBiker;
+        private System.Windows.Forms.Label lblCalc1TSpeed;
+        private System.Windows.Forms.TrackBar tbCalc1Speed;
+        private System.Windows.Forms.ComboBox cbCalc1TireType;
+        private System.Windows.Forms.Label lblCalc1Note;
         private System.Windows.Forms.Label lblCalc4Cadence;
         private System.Windows.Forms.TrackBar tbCalc4Cadence;
         private System.Windows.Forms.Label lblCalc5L;
         private System.Windows.Forms.LinkLabel llblCalc5;
-        private System.Windows.Forms.Label lblCalc6TWeightBike;
-        private System.Windows.Forms.Label lblCalc6WeightBike;
-        private System.Windows.Forms.TrackBar tbCalc6WeightBike;
-        private System.Windows.Forms.TrackBar tbCalc6WindSpeed;
-        private System.Windows.Forms.TrackBar tbCalc6Gradient;
-        private System.Windows.Forms.TrackBar tbCalc6Efficiency;
-        private System.Windows.Forms.Label lblCalc6TEfficiency;
-        private System.Windows.Forms.Label lblCalc6AirResistance;
-        private System.Windows.Forms.Label lblCalc6TWindSpeed;
-        private System.Windows.Forms.Label lblCalc6TGradient;
-        private System.Windows.Forms.Label lblCalc6Efficiency;
-        private System.Windows.Forms.Label lblCalc6WindSpeed;
-        private System.Windows.Forms.Label lblCalc6Gradient;
-        private System.Windows.Forms.TextBox tbCalc6AirResistance;
-        private System.Windows.Forms.Button btnCalc6AirResistance;
-        private System.Windows.Forms.Label lblCalc6TDistance;
-        private System.Windows.Forms.Label lblCalc6Distance;
-        private System.Windows.Forms.TrackBar tbCalc6Distance;
-        private System.Windows.Forms.RadioButton rbCalc6Note1;
-        private System.Windows.Forms.RadioButton rbCalc6Note3;
-        private System.Windows.Forms.RadioButton rbCalc6Note2;
-        private System.Windows.Forms.Label lblCalc6TripTime;
-        private System.Windows.Forms.Label lblWeightLoss;
-        private System.Windows.Forms.Label lblCalories;
-        private System.Windows.Forms.Label lblCalc1gb;
+        private System.Windows.Forms.Label lblCalc1TWeightBike;
+        private System.Windows.Forms.Label lblCalc1WeightBike;
+        private System.Windows.Forms.TrackBar tbCalc1WeightBike;
+        private System.Windows.Forms.TrackBar tbCalc1WindSpeed;
+        private System.Windows.Forms.TrackBar tbCalc1Gradient;
+        private System.Windows.Forms.TrackBar tbCalc1Efficiency;
+        private System.Windows.Forms.Label lblCalc1TEfficiency;
+        private System.Windows.Forms.Label lblCalc1AirResistance;
+        private System.Windows.Forms.Label lblCalc1TWindSpeed;
+        private System.Windows.Forms.Label lblCalc1TGradient;
+        private System.Windows.Forms.Label lblCalc1Efficiency;
+        private System.Windows.Forms.Label lblCalc1WindSpeed;
+        private System.Windows.Forms.Label lblCalc1Gradient;
+        private System.Windows.Forms.TextBox tbCalc1AirResistance;
+        private System.Windows.Forms.Button btnCalc1AirResistance;
+        private System.Windows.Forms.Label lblCalc1TDistance;
+        private System.Windows.Forms.Label lblCalc1Distance;
+        private System.Windows.Forms.TrackBar tbCalc1Distance;
+        private System.Windows.Forms.RadioButton rbCalc1Note1;
+        private System.Windows.Forms.RadioButton rbCalc1Note3;
+        private System.Windows.Forms.RadioButton rbCalc1Note2;
+        private System.Windows.Forms.Label lblCalc1TripTime;
+        private System.Windows.Forms.Label lblCalc1WeightLoss;
+        private System.Windows.Forms.Label lblCalc1Calories;
+        private System.Windows.Forms.Label lblCalc6gb;
         private System.Windows.Forms.Label lblCalc2gb;
         private System.Windows.Forms.Label lblCalc3gb;
         private System.Windows.Forms.Label lblCalc4gb;

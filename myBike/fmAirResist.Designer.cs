@@ -45,6 +45,7 @@
             // 
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOk.Location = new System.Drawing.Point(106, 168);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(0);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(100, 24);
             this.btnOk.TabIndex = 4;
@@ -55,17 +56,20 @@
             // cbAeroPosition
             // 
             this.cbAeroPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbAeroPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbAeroPosition.FormattingEnabled = true;
             this.cbAeroPosition.Location = new System.Drawing.Point(10, 27);
+            this.cbAeroPosition.Margin = new System.Windows.Forms.Padding(0);
             this.cbAeroPosition.Name = "cbAeroPosition";
             this.cbAeroPosition.Size = new System.Drawing.Size(195, 21);
             this.cbAeroPosition.TabIndex = 1;
             // 
             // lblElevation
             // 
-            this.lblElevation.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblElevation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblElevation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblElevation.Location = new System.Drawing.Point(155, 127);
+            this.lblElevation.Margin = new System.Windows.Forms.Padding(0);
             this.lblElevation.Name = "lblElevation";
             this.lblElevation.Size = new System.Drawing.Size(50, 20);
             this.lblElevation.TabIndex = 0;
@@ -74,9 +78,10 @@
             // 
             // lblTemperature
             // 
-            this.lblTemperature.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTemperature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTemperature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTemperature.Location = new System.Drawing.Point(155, 77);
+            this.lblTemperature.Margin = new System.Windows.Forms.Padding(0);
             this.lblTemperature.Name = "lblTemperature";
             this.lblTemperature.Size = new System.Drawing.Size(50, 20);
             this.lblTemperature.TabIndex = 0;
@@ -87,6 +92,7 @@
             // 
             this.tbElevation.AutoSize = false;
             this.tbElevation.Location = new System.Drawing.Point(3, 124);
+            this.tbElevation.Margin = new System.Windows.Forms.Padding(0);
             this.tbElevation.Maximum = 2000;
             this.tbElevation.Name = "tbElevation";
             this.tbElevation.Size = new System.Drawing.Size(154, 30);
@@ -99,6 +105,7 @@
             // 
             this.tbTemperature.AutoSize = false;
             this.tbTemperature.Location = new System.Drawing.Point(3, 74);
+            this.tbTemperature.Margin = new System.Windows.Forms.Padding(0);
             this.tbTemperature.Maximum = 40;
             this.tbTemperature.Minimum = -20;
             this.tbTemperature.Name = "tbTemperature";
@@ -111,6 +118,7 @@
             // lblTElevation
             // 
             this.lblTElevation.Location = new System.Drawing.Point(8, 108);
+            this.lblTElevation.Margin = new System.Windows.Forms.Padding(0);
             this.lblTElevation.Name = "lblTElevation";
             this.lblTElevation.Size = new System.Drawing.Size(194, 14);
             this.lblTElevation.TabIndex = 0;
@@ -119,6 +127,7 @@
             // lblTTemperature
             // 
             this.lblTTemperature.Location = new System.Drawing.Point(8, 58);
+            this.lblTTemperature.Margin = new System.Windows.Forms.Padding(0);
             this.lblTTemperature.Name = "lblTTemperature";
             this.lblTTemperature.Size = new System.Drawing.Size(194, 14);
             this.lblTTemperature.TabIndex = 0;
@@ -127,6 +136,7 @@
             // lblTAeroPosition
             // 
             this.lblTAeroPosition.Location = new System.Drawing.Point(8, 8);
+            this.lblTAeroPosition.Margin = new System.Windows.Forms.Padding(0);
             this.lblTAeroPosition.Name = "lblTAeroPosition";
             this.lblTAeroPosition.Size = new System.Drawing.Size(194, 14);
             this.lblTAeroPosition.TabIndex = 0;

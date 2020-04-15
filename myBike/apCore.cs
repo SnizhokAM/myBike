@@ -15,6 +15,83 @@ using System;
 
 namespace myBike
 {
+    class CalcPower
+    {
+        private string MinuteToHHMM(int minute)
+        {
+            int HH = minute / 60;
+            int MM = minute % 60;
+            return (MM != 0) ? HH.ToString() + " год " + MM.ToString() + " хв" : HH.ToString() + " год";
+        }
+
+        public string GetPowerValue(int weightbiker, int weightbike, float gradient, float rollresist, int bikerspeed, int windspeed, float airresist, int efficiency)
+        {
+            float wn = 9.8f * (weightbiker + weightbike);
+            float gr = wn * (0.01f * gradient + rollresist);
+            float rs = ((bikerspeed / 3.6f) + windspeed >= 0) ? (bikerspeed / 3.6f) + windspeed : 0;
+            int power = (int)Math.Round(((bikerspeed / 3.6f) * gr + (bikerspeed / 3.6f) * rs * rs * airresist) / (0.01f * efficiency), 0);
+            return "Необхідна потужність: " + power.ToString() + " Вт";
+        }
+
+        public string GetTripTimeValue(int distance, int bikerspeed)
+        {
+            int triptime = (int)Math.Round((16.6667f * distance) / (bikerspeed / 3.6f), 0);
+            int totaltime = (int)Math.Round(1.25f * triptime, 0);
+            int resttime = totaltime - triptime;
+            return "Час \"в сідлі\": " + MinuteToHHMM(triptime) + " Відпочинок: " + MinuteToHHMM(resttime) + "\n Час подорожі: " + MinuteToHHMM(totaltime);
+        }
+
+        public string GetCaloriesValue(int weightbiker, int weightbike, float gradient, float rollresist, int bikerspeed, int windspeed, float airresist, int efficiency, int distance)
+        {
+            float wn = 9.8f * (weightbiker + weightbike);
+            float gr = wn * (0.01f * gradient + rollresist);
+            float rs = ((bikerspeed / 3.6f) + windspeed >= 0) ? (bikerspeed / 3.6f) + windspeed : 0;
+            float power = ((bikerspeed / 3.6f) * gr + (bikerspeed / 3.6f) * rs * rs * airresist) / (0.01f * efficiency);
+            float triptime = (16.6667f * distance) / (bikerspeed / 3.6f);
+            int calories = (int)Math.Round(triptime / 60f * (power * 4f) / 1.163f, 0);
+            return "Витрата калорій: " + calories.ToString() + " ккал";
+        }
+
+        public string GetWeightLossValue(int weightbiker, int weightbike, float gradient, float rollresist, int bikerspeed, int windspeed, float airresist, int efficiency, int distance)
+        {
+            float wn = 9.8f * (weightbiker + weightbike);
+            float gr = wn * (0.01f * gradient + rollresist);
+            float rs = ((bikerspeed / 3.6f) + windspeed >= 0) ? (bikerspeed / 3.6f) + windspeed : 0;
+            float power = ((bikerspeed / 3.6f) * gr + (bikerspeed / 3.6f) * rs * rs * airresist) / (0.01f * efficiency);
+            float triptime = (16.6667f * distance) / (bikerspeed / 3.6f);
+            float calories = triptime / 60f * (power * 4f) / 1.163f;
+            float weightloss = (float)Math.Round(calories / 7716f, 2);
+            return "* для тих, хто підтримує форму: можливість схуднути на " + weightloss.ToString() + " кг";
+        }
+    }
+
+    class CalcCadence
+    {
+        public string GetValue(int a_size, int b_size, int bikespeed, int l_wheel)
+        {
+            int cadence = (int)((float)(bikespeed) / (float)(0.00006 * l_wheel * ((float)a_size / (float)b_size)));
+            return "Каденс: " + cadence.ToString() + " об/хв";
+        }
+    }
+
+    class CalcSpeed
+    {
+        public string GetValue(int a_size, int b_size, int cadence, int l_wheel)
+        {
+            float speed = (float)Math.Round(0.00006f * cadence * l_wheel * ((float)a_size / (float)b_size), 1);
+            return "Швидкість: " + speed.ToString("0.0") + " км/год";
+        }
+    }
+
+    class CalcSprocketB
+    {
+        public string GetValue(int a_size, int speed, int cadence, int l_wheel)
+        {
+            int b_size = (int)(0.00006 * cadence * l_wheel * ((float)a_size / (float)speed));
+            return (b_size < 11) ? "Мінімальний розмір зірочки 11Т\n Потрібно змінити параметри підбору" : "Необхідна зірочка: " + b_size.ToString() + "T";
+        }
+    }
+
     class CalcSize
     {
         public string GetValue(int biketype, int bikerheight)
@@ -222,83 +299,6 @@ namespace myBike
                     }
             }
             return bikenote;
-        }
-    }
-
-    class CalcCadence
-    {
-        public string GetValue(int a_size, int b_size, int bikespeed, int l_wheel)
-        {
-            int cadence = (int)((float)(bikespeed) / (float)(0.00006 * l_wheel * ((float)a_size / (float)b_size)));
-            return "Каденс: " + cadence.ToString() + " об/хв";
-        }
-    }
-
-    class CalcSpeed
-    {
-        public string GetValue(int a_size, int b_size, int cadence, int l_wheel)
-        {
-            float speed = (float)Math.Round(0.00006f * cadence * l_wheel * ((float)a_size / (float)b_size), 1);
-            return "Швидкість: " + speed.ToString("0.0") + " км/год";
-        }
-    }
-
-    class CalcSprocketB
-    {
-        public string GetValue(int a_size, int speed, int cadence, int l_wheel)
-        {
-            int b_size = (int)(0.00006 * cadence * l_wheel * ((float)a_size / (float)speed));
-            return (b_size < 11) ? "Мінімальний розмір зірочки 11Т\n Потрібно змінити параметри підбору" : "Необхідна зірочка: " + b_size.ToString() + "T";
-        }
-    }
-
-    class CalcPower
-    {
-        private string MinuteToHHMM(int minute)
-        {
-            int HH = minute / 60;
-            int MM = minute % 60;
-            return (MM != 0) ? HH.ToString() + " год " + MM.ToString() + " хв" : HH.ToString() + " год";
-        }
-
-        public string GetPowerValue(int weightbiker, int weightbike, float gradient, float rollresist, int bikerspeed, int windspeed, float airresist, int efficiency)
-        {
-            float wn = 9.8f * (weightbiker + weightbike);
-            float gr = wn * (0.01f * gradient + rollresist);
-            float rs = ((bikerspeed / 3.6f) + windspeed >= 0) ? (bikerspeed / 3.6f) + windspeed : 0;
-            int power = (int)Math.Round(((bikerspeed / 3.6f) * gr + (bikerspeed / 3.6f) * rs * rs * airresist) / (0.01f * efficiency), 0);
-            return "Необхідна потужність: " + power.ToString() + " Вт";
-        }
-
-        public string GetTripTimeValue(int distance, int bikerspeed)
-        {
-            int triptime = (int)Math.Round((16.6667f * distance) / (bikerspeed / 3.6f), 0);
-            int totaltime = (int)Math.Round(1.25f * triptime, 0);
-            int resttime = totaltime - triptime;
-            return "Час \"в сідлі\": " + MinuteToHHMM(triptime) +" Відпочинок: " + MinuteToHHMM(resttime) + "\n Час подорожі: " + MinuteToHHMM(totaltime);
-        }
-
-        public string GetCaloriesValue(int weightbiker, int weightbike, float gradient, float rollresist, int bikerspeed, int windspeed, float airresist, int efficiency, int distance)
-        {
-            float wn = 9.8f * (weightbiker + weightbike);
-            float gr = wn * (0.01f * gradient + rollresist);
-            float rs = ((bikerspeed / 3.6f) + windspeed >= 0) ? (bikerspeed / 3.6f) + windspeed : 0;
-            float power = ((bikerspeed / 3.6f) * gr + (bikerspeed / 3.6f) * rs * rs * airresist) / (0.01f * efficiency);
-            float triptime = (16.6667f * distance) / (bikerspeed / 3.6f);
-            int calories = (int)Math.Round(triptime / 60f * (power * 4f) / 1.163f, 0);  
-            return "Витрата калорій: " + calories.ToString() + " ккал";
-        }
-
-        public string GetWeightLossValue(int weightbiker, int weightbike, float gradient, float rollresist, int bikerspeed, int windspeed, float airresist, int efficiency, int distance)
-        {
-            float wn = 9.8f * (weightbiker + weightbike);
-            float gr = wn * (0.01f * gradient + rollresist);
-            float rs = ((bikerspeed / 3.6f) + windspeed >= 0) ? (bikerspeed / 3.6f) + windspeed : 0;
-            float power = ((bikerspeed / 3.6f) * gr + (bikerspeed / 3.6f) * rs * rs * airresist) / (0.01f * efficiency);
-            float triptime = (16.6667f * distance) / (bikerspeed / 3.6f);
-            float calories = triptime / 60f * (power * 4f) / 1.163f;
-            float weightloss = (float)Math.Round(calories / 7716f, 2);
-            return "* для тих, хто підтримує форму: можливість схуднути на " + weightloss.ToString() + " кг";
         }
     }
 }
