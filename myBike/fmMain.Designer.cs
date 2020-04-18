@@ -194,7 +194,7 @@
             this.btnCalc6.TabIndex = 6;
             this.btnCalc6.Text = "Ростовка";
             this.btnCalc6.UseVisualStyleBackColor = false;
-            this.btnCalc6.Click += new System.EventHandler(this.btnCalc1_Click);
+            this.btnCalc6.Click += new System.EventHandler(this.btnCalc6_Click);
             // 
             // btnCalc2
             // 
@@ -657,6 +657,7 @@
             // 
             this.btnCalc1.BackColor = System.Drawing.SystemColors.Control;
             this.btnCalc1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCalc1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCalc1.Location = new System.Drawing.Point(1, 0);
             this.btnCalc1.Margin = new System.Windows.Forms.Padding(0);
@@ -665,7 +666,7 @@
             this.btnCalc1.TabIndex = 1;
             this.btnCalc1.Text = "Подорож";
             this.btnCalc1.UseVisualStyleBackColor = false;
-            this.btnCalc1.Click += new System.EventHandler(this.btnCalc6_Click);
+            this.btnCalc1.Click += new System.EventHandler(this.btnCalc1_Click);
             // 
             // btnAbout
             // 

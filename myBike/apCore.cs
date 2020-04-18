@@ -15,7 +15,7 @@ using System;
 
 namespace myBike
 {
-    class CalcPower
+    class CalcPower //Калькулятор подорожі (потужності)
     {
         private string MinuteToHHMM(int minute)
         {
@@ -65,7 +65,7 @@ namespace myBike
         }
     }
 
-    class CalcCadence
+    class CalcCadence //Калькулятор каденсу
     {
         public string GetValue(int a_size, int b_size, int bikespeed, int l_wheel)
         {
@@ -74,7 +74,7 @@ namespace myBike
         }
     }
 
-    class CalcSpeed
+    class CalcSpeed //Калькулятор швидкості
     {
         public string GetValue(int a_size, int b_size, int cadence, int l_wheel)
         {
@@ -83,7 +83,7 @@ namespace myBike
         }
     }
 
-    class CalcSprocketB
+    class CalcSprocketB //Калькулятор касети
     {
         public string GetValue(int a_size, int speed, int cadence, int l_wheel)
         {
@@ -92,7 +92,7 @@ namespace myBike
         }
     }
 
-    class CalcSize
+    class CalcSize //Калькулятор ростовки
     {
         public string GetValue(int biketype, int bikerheight)
         {

@@ -27,12 +27,12 @@ namespace myBike
             fmSplash.Hide();
             fmSplash.Dispose();
         }
-
-        private CalcSize Calc1;
+        
+        private CalcPower Calc1;
         private CalcCadence Calc2;
         private CalcSpeed Calc3;
         private CalcSprocketB Calc4;
-        private CalcPower Calc6;
+        private CalcSize Calc6;
         private string[] SprocketA;
         private string[] SprocketB;
         private string[] TireType;
@@ -46,11 +46,11 @@ namespace myBike
 
         private void FmMain_Load(object sender, EventArgs e)
         {
-            Calc1 = new CalcSize();
+            Calc1 = new CalcPower();
             Calc2 = new CalcCadence();
             Calc3 = new CalcSpeed();
             Calc4 = new CalcSprocketB();
-            Calc6 = new CalcPower();
+            Calc6 = new CalcSize();
             SprocketA = new[] {"22", "24", "28", "32", "34", "38", "40", "42", "44", "46", "48", "52", "53"};
             SprocketB = new string[40];
             for (int bi = 0; bi < 40; bi++)
@@ -112,11 +112,17 @@ namespace myBike
         private void SetDefButtonColor()
         {
             btnCalc1.ForeColor = SystemColors.ControlText;
+            btnCalc1.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             btnCalc2.ForeColor = SystemColors.ControlText;
+            btnCalc2.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             btnCalc3.ForeColor = SystemColors.ControlText;
+            btnCalc3.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             btnCalc4.ForeColor = SystemColors.ControlText;
+            btnCalc4.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             btnCalc5.ForeColor = SystemColors.ControlText;
+            btnCalc5.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             btnCalc6.ForeColor = SystemColors.ControlText;
+            btnCalc6.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
         }
 
         private void SetDefPanelState()
@@ -137,17 +143,14 @@ namespace myBike
 
         private void btnCalc1_Click(object sender, EventArgs e)
         {
-            this.Text = "Велосипедний калькулятор - ростовка";
+            this.Text = "Велосипедний калькулятор - подорож";
             SetDefButtonColor();
-            btnCalc6.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc1.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc1.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             SetDefPanelState();
-            pnlCalc6.Enabled = true;
-            pnlCalc6.Visible = true;
-            if (rbMTB6.Checked) rbMTB6.Focus();
-            if (rbRoad6.Checked) rbRoad6.Focus();
-            if (rbTouring6.Checked) rbTouring6.Focus();
-            if (rbBMX6.Checked) rbBMX6.Focus();
-            if (rbChild6.Checked) rbChild6.Focus();
+            pnlCalc1.Enabled = true;
+            pnlCalc1.Visible = true;
+            tbCalc1WeightBiker.Focus();
         }
 
         private void btnCalc2_Click(object sender, EventArgs e)
@@ -155,6 +158,7 @@ namespace myBike
             this.Text = "Велосипедний калькулятор - каденс";
             SetDefButtonColor();
             btnCalc2.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc2.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             SetDefPanelState();
             pnlCalc2.Enabled = true;
             pnlCalc2.Visible = true;
@@ -167,6 +171,7 @@ namespace myBike
             this.Text = "Велосипедний калькулятор - швидкість";
             SetDefButtonColor();
             btnCalc3.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc3.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             SetDefPanelState();
             pnlCalc3.Enabled = true;
             pnlCalc3.Visible = true;
@@ -179,6 +184,7 @@ namespace myBike
             this.Text = "Велосипедний калькулятор - касета";
             SetDefButtonColor();
             btnCalc4.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc4.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             SetDefPanelState();
             pnlCalc4.Enabled = true;
             pnlCalc4.Visible = true;
@@ -191,6 +197,7 @@ namespace myBike
             this.Text = "Велосипедний калькулятор - велокомп'ютер";
             SetDefButtonColor();
             btnCalc5.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc5.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             SetDefPanelState();
             pnlCalc5.Enabled = true;
             pnlCalc5.Visible = true;
@@ -199,28 +206,35 @@ namespace myBike
 
         private void btnCalc6_Click(object sender, EventArgs e)
         {
-            this.Text = "Велосипедний калькулятор - подорож";
+            this.Text = "Велосипедний калькулятор - ростовка";
             SetDefButtonColor();
-            btnCalc1.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc6.ForeColor = SystemColors.ActiveCaptionText;
+            btnCalc6.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             SetDefPanelState();
-            pnlCalc1.Enabled = true;
-            pnlCalc1.Visible = true;
-            tbCalc1WeightBiker.Focus();
+            pnlCalc6.Enabled = true;
+            pnlCalc6.Visible = true;
+            if (rbMTB6.Checked) rbMTB6.Focus();
+            if (rbRoad6.Checked) rbRoad6.Focus();
+            if (rbTouring6.Checked) rbTouring6.Focus();
+            if (rbBMX6.Checked) rbBMX6.Focus();
+            if (rbChild6.Checked) rbChild6.Focus();
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
             btnAbout.ForeColor = SystemColors.ActiveCaptionText;
+            btnAbout.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             FmAbout AboutProgram = new FmAbout();
             AboutProgram.ShowDialog();
             AboutProgram.Dispose();
-            btnAbout.ForeColor = SystemColors.ControlText; ;
-            if (pnlCalc6.Enabled) pnlCalc6.Focus();
+            btnAbout.ForeColor = SystemColors.ControlText;
+            btnAbout.Font = new Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            if (pnlCalc1.Enabled) pnlCalc1.Focus();
             if (pnlCalc2.Enabled) pnlCalc2.Focus();
             if (pnlCalc3.Enabled) pnlCalc3.Focus();
             if (pnlCalc4.Enabled) pnlCalc4.Focus();
             if (pnlCalc5.Enabled) pnlCalc5.Focus();
-            if (pnlCalc1.Enabled) pnlCalc1.Focus();
+            if (pnlCalc6.Enabled) pnlCalc6.Focus();
         }
 
         #region Калькулятор #1 "Потужність"
@@ -319,10 +333,10 @@ namespace myBike
         {
             if (cbCalc1TireType.SelectedIndex != -1)
             {
-                lblCalc1Power.Text = Calc6.GetPowerValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value);
-                lblCalc1TripTime.Text = Calc6.GetTripTimeValue(tbCalc1Distance.Value, tbCalc1Speed.Value);
-                lblCalc1Calories.Text = Calc6.GetCaloriesValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value, tbCalc1Distance.Value);
-                lblCalc1WeightLoss.Text = Calc6.GetWeightLossValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value, tbCalc1Distance.Value);
+                lblCalc1Power.Text = Calc1.GetPowerValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value);
+                lblCalc1TripTime.Text = Calc1.GetTripTimeValue(tbCalc1Distance.Value, tbCalc1Speed.Value);
+                lblCalc1Calories.Text = Calc1.GetCaloriesValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value, tbCalc1Distance.Value);
+                lblCalc1WeightLoss.Text = Calc1.GetWeightLossValue(tbCalc1WeightBiker.Value, tbCalc1WeightBike.Value, 0.1f * tbCalc1Gradient.Value, RollingResistance[cbCalc1TireType.SelectedIndex], tbCalc1Speed.Value, tbCalc1WindSpeed.Value, (float)Convert.ToDouble(tbCalc1AirResistance.Text), tbCalc1Efficiency.Value, tbCalc1Distance.Value);
             }
         }
 
@@ -598,32 +612,32 @@ namespace myBike
             if (rbMTB6.Checked)
             {
                 pbCalc6.Image = Properties.Resources.mtb;
-                lblCalc6Value.Text = Calc1.GetValue(1, tbCalc6.Value);
-                lblCalc6Note.Text = Calc1.GetNote(1);
+                lblCalc6Value.Text = Calc6.GetValue(1, tbCalc6.Value);
+                lblCalc6Note.Text = Calc6.GetNote(1);
             }
             if (rbRoad6.Checked)
             {
                 pbCalc6.Image = Properties.Resources.road;
-                lblCalc6Value.Text = Calc1.GetValue(2, tbCalc6.Value);
-                lblCalc6Note.Text = Calc1.GetNote(2);
+                lblCalc6Value.Text = Calc6.GetValue(2, tbCalc6.Value);
+                lblCalc6Note.Text = Calc6.GetNote(2);
             }
             if (rbTouring6.Checked)
             {
                 pbCalc6.Image = Properties.Resources.tour;
-                lblCalc6Value.Text = Calc1.GetValue(3, tbCalc6.Value);
-                lblCalc6Note.Text = Calc1.GetNote(3);
+                lblCalc6Value.Text = Calc6.GetValue(3, tbCalc6.Value);
+                lblCalc6Note.Text = Calc6.GetNote(3);
             }
             if (rbBMX6.Checked)
             {
                 pbCalc6.Image = Properties.Resources.bmx;
-                lblCalc6Value.Text = Calc1.GetValue(4, tbCalc6.Value);
-                lblCalc6Note.Text = Calc1.GetNote(4);
+                lblCalc6Value.Text = Calc6.GetValue(4, tbCalc6.Value);
+                lblCalc6Note.Text = Calc6.GetNote(4);
             }
             if (rbChild6.Checked)
             {
                 pbCalc6.Image = Properties.Resources.kids;
-                lblCalc6Value.Text = Calc1.GetValue(5, tbCalc6.Value);
-                lblCalc6Note.Text = Calc1.GetNote(5);
+                lblCalc6Value.Text = Calc6.GetValue(5, tbCalc6.Value);
+                lblCalc6Note.Text = Calc6.GetNote(5);
             }
         }     
     }
